@@ -47,27 +47,27 @@
 
 ## 🧠 Currently Building
 
-🚀 **5G Log Analyzer**  
-Python tool that parses telecom logs and highlights failures.
+🚀 **[5gtestscope](https://github.com/gbvk312/5gtestscope)**  
+Smart 5G Log Analyzer for Test Engineers Goal: Automatically analyze 5G gNodeB / simulator logs and generate failure insights + KPIs.
 
-🤖 **Automation Assistant**  
-Script that automatically summarizes test results.
+🤖 **[test-report-gen](https://github.com/gbvk312/test-report-gen)**  
+Test report generator which takes input as pytest logs automation logs network test logs and generates output as HTML report Charts Failure summary.
 
-📊 **Test Monitoring Dashboard**  
-A lightweight tool to visualize automated test runs.
+📊 **[test-monitor-dashboard](https://github.com/gbvk312/test-monitor-dashboard)**  
+Python tool using Streamlit, Shows: running tests, failures, metrics, logs.
 
 ---
 
 ## 🚀 Featured Projects
 
-### 📊 Telecom Log Analyzer
-Python-based tool for parsing and analyzing telecom test logs.
+### 📊 [5g-log-analyzer](https://github.com/gbvk312/5g-log-analyzer)
+Smart 5G Log Analyzer for parsing and analyzing telecom test logs.
 
-### 🤖 Test Automation Toolkit
-Collection of Python scripts used for automating repetitive testing workflows.
+### 🤖 [testwatch](https://github.com/gbvk312/testwatch)
+This is a simple but powerful log monitoring tool.
 
-### 🧪 Smart Bug Reporter
-Automatically extracts failure information from logs and generates bug summaries.
+### 🧪 [Regression-Flakiness-Heatmap-Scorer](https://github.com/gbvk312/Regression-Flakiness-Heatmap-Scorer)
+Automatically extracts failure information from logs and scores flakiness using a heatmap approach.
 
 ---
 
