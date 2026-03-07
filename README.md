@@ -85,7 +85,7 @@ Tool for analyzing telecom test logs and generating insights.
 ## 📫 Connect With Me
 
 - 🐙 GitHub: https://github.com/gbvk312
-- 💼 LinkedIn: (Add your LinkedIn profile)
+- 💼 LinkedIn: 
 
 ---
 
