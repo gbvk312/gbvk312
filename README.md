@@ -1,20 +1,29 @@
 <!-- PROFILE BANNER -->
-![Banner](https://capsule-render.vercel.app/api?type=waving&color=0:00F7FF,100:0066FF&height=200&section=header&text=Bhanu%20Vamsi%20Krishna&fontSize=40&fontColor=ffffff)
+![Banner](https://capsule-render.vercel.app/api?type=waving&color=0:00F7FF,100:0066FF&height=220&section=header&text=Bhanu%20Vamsi%20Krishna&fontSize=42&fontColor=ffffff)
 
 # Hi, I'm Bhanu Vamsi Krishna 👋
 
-![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=00F7FF&size=28&center=true&vCenter=true&width=700&lines=5G+Test+Engineer;Python+Automation+Developer;Tech+Enthusiast;Open+Source+Learner)
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=00F7FF&size=26&center=true&vCenter=true&width=700&lines=5G+Test+Engineer;Python+Automation+Developer;Telecom+Testing+Specialist;Open+Source+Learner)
 
 ---
 
-## 👨‍💻 About Me
+## 🚀 About Me
 
-- 📡 **5G Test Engineer** working on simulator testing for **gNodeB**
-- 🐍 Skilled in **Python automation**
-- 🤖 Building **chatbots and automation tools**
-- 🧪 Interested in **software testing, telecom networks, and automation**
-- 🌱 Currently learning **advanced Python automation & AI tools**
-- 🎶 Music lover
+📡 **5G Test Engineer** focused on testing **gNodeB simulators and telecom systems**  
+🐍 Passionate about **Python automation and developer tools**  
+🧪 Interested in **test automation, telecom networks, and log analysis**  
+⚙️ I enjoy building **tools that simplify complex testing workflows**  
+🌱 Currently exploring **AI-assisted testing & intelligent automation**
+
+---
+
+## 🏷️ Skills & Technologies
+
+![Python](https://img.shields.io/badge/Python-Automation-blue?style=for-the-badge&logo=python)
+![Linux](https://img.shields.io/badge/Linux-System-green?style=for-the-badge&logo=linux)
+![Docker](https://img.shields.io/badge/Docker-Containerization-blue?style=for-the-badge&logo=docker)
+![Git](https://img.shields.io/badge/Git-VersionControl-orange?style=for-the-badge&logo=git)
+![Bash](https://img.shields.io/badge/Bash-Scripting-black?style=for-the-badge&logo=gnubash)
 
 ---
 
@@ -29,30 +38,36 @@
 ## 🔭 Current Work
 
 - 📡 Testing **5G gNodeB simulators**
-- 🧪 Monitoring automated test runs and reporting bugs
-- ⚙️ Developing **Python scripts for test automation**
-- 📊 Creating tools for **test log analysis and monitoring**
+- 🧪 Monitoring automated test runs
+- ⚙️ Building **Python automation scripts**
+- 📊 Developing **tools for telecom log analysis**
+- 🐞 Identifying and reporting bugs from test results
 
 ---
 
-## 🌱 Learning & Exploring
+## 🧠 Currently Building
 
-- AI-powered **testing automation**
-- **Python tools for telecom log analysis**
-- Building **lightweight developer utilities**
+🚀 **5G Log Analyzer**  
+Python tool that parses telecom logs and highlights failures.
+
+🤖 **Automation Assistant**  
+Script that automatically summarizes test results.
+
+📊 **Test Monitoring Dashboard**  
+A lightweight tool to visualize automated test runs.
 
 ---
 
 ## 🚀 Featured Projects
 
-### 🤖 ChatBot
-Python-based chatbot for automated responses.
+### 📊 Telecom Log Analyzer
+Python-based tool for parsing and analyzing telecom test logs.
 
-### 🧪 Test Automation Scripts
-Python scripts to automate repetitive testing workflows.
+### 🤖 Test Automation Toolkit
+Collection of Python scripts used for automating repetitive testing workflows.
 
-### 📊 Log Analyzer
-Tool for analyzing telecom test logs and generating insights.
+### 🧪 Smart Bug Reporter
+Automatically extracts failure information from logs and generates bug summaries.
 
 ---
 
@@ -70,34 +85,47 @@ Tool for analyzing telecom test logs and generating insights.
 
 ---
 
-## 📅 Contribution Activity
+## 📅 Contribution Graph
 
 ![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=gbvk312&theme=tokyo-night)
 
 ---
 
+## 🏆 GitHub Achievements
+
+![Trophies](https://github-profile-trophy.vercel.app/?username=gbvk312&theme=tokyonight)
+
+---
+
 ## 👀 Profile Views
 
-![Profile Views](https://komarev.com/ghpvc/?username=gbvk312&color=blue)
+![Profile Views](https://komarev.com/ghpvc/?username=gbvk312&label=Profile%20Views&color=0e75b6&style=flat)
 
 ---
 
 ## 📫 Connect With Me
 
-- 🐙 GitHub: https://github.com/gbvk312
-- 💼 LinkedIn: 
+🐙 GitHub: https://github.com/gbvk312  
+💼 LinkedIn: (Add your LinkedIn profile here)
+
+---
+
+## 🌍 Open Source Goals
+
+- Build tools for **telecom test automation**
+- Create useful **Python utilities for developers**
+- Share knowledge through **open-source projects**
+- Reach **100+ ⭐ on a GitHub project**
 
 ---
 
 ## ⚡ Fun Fact
 
-I enjoy automating repetitive testing tasks and transforming complex workflows into simple Python scripts.
+I enjoy **automating repetitive testing tasks and converting complex workflows into simple Python scripts.**
 
 ---
 
-> "Quality is never an accident; it is always the result of intelligent effort."  
+> **"Quality is never an accident; it is always the result of intelligent effort."**  
 > — John Ruskin
-
----
 
 ⭐ Always eager to learn, collaborate, and contribute to open source!
