@@ -81,7 +81,7 @@ Automatically extracts failure information from logs and scores flakiness using 
 
 ## 📈 Most Used Languages
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=gbvk312&layout=compact&theme=tokyonight&langs_count=6)
+![Top Languages](https://github-readme-stats.12b4f.repl.co/api/top-langs/?username=gbvk312&layout=compact&theme=tokyonight&langs_count=6)
 
 ---
 
@@ -93,7 +93,7 @@ Automatically extracts failure information from logs and scores flakiness using 
 
 ## 🏆 GitHub Achievements
 
-![Trophies](https://github-profile-trophy.vercel.app/?username=gbvk312&theme=tokyonight)
+![Trophies](https://github-profile-trophy.onrender.com/?username=gbvk312&theme=tokyonight)
 
 ---
 
