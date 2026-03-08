@@ -26,8 +26,8 @@
 
 # 🧰 Tech Stack
 
-<p>
-<img src="https://skillicons.dev/icons?i=python, git, github, linux, docker, vscode, bash, regex, pytest" />
+<p align="center">
+<img src="https://skillicons.dev/icons?i=python,git,github,linux,docker,vscode,bash,pytest,prometheus,grafana&perline=5" />
 </p>
 
 ---
