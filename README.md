@@ -27,7 +27,7 @@
 # 🧰 Tech Stack
 
 <p>
-<img src="https://skillicons.dev/icons?i=python,git,github,linux,docker,vscode,bash,regex,markdown" />
+<img src="https://skillicons.dev/icons?i=python, git, github, linux, docker, vscode, bash, regex, pytest" />
 </p>
 
 ---
@@ -146,6 +146,46 @@ Detects **flaky tests** from automation logs and visualizes failures using a **h
 
 ---
 
+## 🚀 Live Project Demos
+
+| Project | Description | Demo |
+|-------|-------------|------|
+| 5GTestScope | Intelligent 5G log analyzer for telecom test engineers | Coming Soon |
+| Test Monitor Dashboard | Real-time regression test monitoring | Coming Soon |
+| Regression Flakiness Analyzer | Detect flaky automation tests using failure patterns | Coming Soon |
+
+---
+
+## 📊 Developer Metrics
+
+![Metrics](https://metrics.lecoq.io/gbvk312?template=classic&base.header=0&base.activity=1&base.community=1&base.repositories=1&base.metadata=0&languages=1&introduction=1&lines=1&config.timezone=Asia%2FKolkata)
+
+---
+
+## 🧩 Automation Tools Portfolio
+
+Tools I am building for **telecom test engineers** and **automation developers**.
+
+### 📊 5G Log Analyzer
+Extracts **KPIs, failures, and error patterns** from telecom automation logs.
+
+### 📈 Regression Monitor
+Tracks automation runs and identifies **failure trends and execution statistics**.
+
+### 🔥 Flaky Test Detector
+Automatically detects **unstable tests** from regression history.
+
+### 🧠 AI Log Insight Tool
+Future project that uses **AI to identify root causes from telecom logs**.
+
+---
+
+## 🌍 Profile Visitors
+
+![Visitor Badge](https://api.visitorbadge.io/api/visitors?path=gbvk312&label=Visitors&countColor=%23263759)
+
+---
+
 # 🏆 GitHub Achievements
 
 ![Trophies](https://github-profile-trophy.onrender.com/?username=gbvk312&theme=tokyonight&no-frame=true)
@@ -155,6 +195,16 @@ Detects **flaky tests** from automation logs and visualizes failures using a **h
 # 👀 Profile Views
 
 ![Profile Views](https://komarev.com/ghpvc/?username=gbvk312&label=Profile%20Views&color=0e75b6&style=flat)
+
+---
+
+## 🧠 What I Like to Build
+
+- 📡 Telecom testing utilities
+- 📊 Log analysis tools
+- 🤖 Automation frameworks
+- 📈 Test monitoring dashboards
+- 🔎 Failure analysis tools
 
 ---
 
@@ -173,11 +223,23 @@ Focus areas:
 
 ---
 
+## ⭐ Recommended Project
+
+If you're interested in telecom testing tools, check out:
+
+🚀 **5GTestScope**
+
+An intelligent log analysis tool designed for telecom test engineers.
+
+🔗 https://github.com/gbvk312/5gtestscope
+
+---
+
 # 📫 Connect With Me
 
 🐙 GitHub: https://github.com/gbvk312  
 
-💼 LinkedIn: https://linkedin.com/in/YOUR_PROFILE
+💼 LinkedIn: Coming Soon
 
 ---
 
