@@ -3,119 +3,189 @@
 
 # Hi, I'm Bhanu Vamsi Krishna 👋
 
-![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=00F7FF&size=26&center=true&vCenter=true&width=700&lines=5G+Test+Engineer;Python+Automation+Developer;Telecom+Testing+Specialist;Open+Source+Learner)
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=00F7FF&size=26&center=true&vCenter=true&width=700&lines=5G+Test+Engineer;Python+Automation+Developer;Telecom+Testing+Specialist;Open+Source+Builder)
+
+[![GitHub followers](https://img.shields.io/github/followers/gbvk312?label=Follow&style=social)](https://github.com/gbvk312)
+[![GitHub stars](https://img.shields.io/github/stars/gbvk312?affiliations=OWNER&style=social)](https://github.com/gbvk312)
 
 ---
 
-## 🚀 About Me
+# 🚀 About Me
 
-📡 **5G Test Engineer** focused on testing **gNodeB simulators and telecom systems**  
-🐍 Passionate about **Python automation and developer tools**  
-🧪 Interested in **test automation, telecom networks, and log analysis**  
-⚙️ I enjoy building **tools that simplify complex testing workflows**  
-🌱 Currently exploring **AI-assisted testing & intelligent automation**
+📡 **5G Test Engineer** specializing in **gNodeB simulator and telecom system testing**
+
+🐍 Passionate about **Python automation and developer productivity tools**
+
+🧪 Experienced in **test automation, regression monitoring, and telecom log analysis**
+
+⚙️ I enjoy building **tools that simplify complex testing workflows**
+
+🌱 Currently exploring **AI-assisted testing and intelligent automation**
 
 ---
 
-## 🧰 Tech Stack
+# 🧰 Tech Stack
 
 <p>
-<img src="https://skillicons.dev/icons?i=python,git,github,linux,docker,vscode,bash" />
+<img src="https://skillicons.dev/icons?i=python,git,github,linux,docker,vscode,bash,regex,markdown" />
 </p>
 
 ---
 
-## 🔭 Current Work
+# 📡 Telecom Testing Tools & Technologies
+
+- 5G gNodeB Simulator
+- Telecom Log Analysis
+- Pytest Automation
+- Linux Networking Tools
+- Wireshark
+- Bash Automation
+- CI/CD Test Monitoring
+
+---
+
+# 🔭 Current Work
 
 - 📡 Testing **5G gNodeB simulators**
-- 🧪 Monitoring automated test runs
+- 🧪 Monitoring automated **regression test runs**
 - ⚙️ Building **Python automation scripts**
 - 📊 Developing **tools for telecom log analysis**
-- 🐞 Identifying and reporting bugs from test results
+- 🐞 Identifying and reporting **test failures and bugs**
 
 ---
 
-## 🧠 Currently Building
+# 🧠 Currently Building
 
-* 🚀 **[5gtestscope](https://github.com/gbvk312/5gtestscope)**:  
-  Smart 5G Log Analyzer for Test Engineers. Goal: Automatically analyze 5G gNodeB/simulator logs and generate failure insights & KPIs.
+### 🚀 5GTestScope
+Smart **5G Log Analyzer** for telecom test engineers.
 
-* 🤖 **[test-report-gen](https://github.com/gbvk312/test-report-gen)**:  
-  Test report generator that takes pytest logs, automation logs, and network test logs as input to generate HTML reports, charts, and failure summaries.
+Goal:
+Automatically analyze **gNodeB / simulator logs** and generate:
 
-* 📊 **[test-monitor-dashboard](https://github.com/gbvk312/test-monitor-dashboard)**:  
-  Python tool using Streamlit that shows running tests, failures, metrics, and logs.
+- Failure insights
+- Error clustering
+- KPI summaries
 
----
-
-## 🚀 Featured Projects
-
-* 📊 **[5g-log-analyzer](https://github.com/gbvk312/5g-log-analyzer)**:  
-  Smart 5G Log Analyzer for parsing and analyzing telecom test logs.
-
-* 🤖 **[testwatch](https://github.com/gbvk312/testwatch)**:  
-  A simple but powerful log monitoring tool.
-
-* 🧪 **[Regression-Flakiness-Heatmap-Scorer](https://github.com/gbvk312/Regression-Flakiness-Heatmap-Scorer)**:  
-  Automatically extracts failure information from logs and scores flakiness using a heatmap approach.
+🔗 https://github.com/gbvk312/5gtestscope
 
 ---
 
-## 📊 GitHub Stats
+### 🤖 Test Report Generator
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=gbvk312&show_icons=true&theme=tokyonight)
+Generates **rich HTML test reports** from:
 
-![GitHub Streak](https://streak-stats.demolab.com/?user=gbvk312&theme=tokyonight)
+- pytest logs
+- automation logs
+- network test logs
+
+Includes:
+
+- charts
+- failure summaries
+- execution statistics
+
+🔗 https://github.com/gbvk312/test-report-gen
 
 ---
 
-## 📈 Most Used Languages
+### 📊 Test Monitor Dashboard
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=gbvk312&layout=compact&theme=tokyonight&langs_count=6)
+Real-time **automation test monitoring dashboard** built with **Streamlit**.
+
+Features:
+
+- running tests
+- failure statistics
+- logs
+- execution metrics
+
+🔗 https://github.com/gbvk312/test-monitor-dashboard
 
 ---
 
-## 📅 Contribution Graph
+# 🚀 Featured Projects
+
+### 📊 5G Log Analyzer
+Smart telecom log parser that extracts **KPIs, failures, and error patterns** from automation logs.
+
+🔗 https://github.com/gbvk312/5g-log-analyzer
+
+---
+
+### 🤖 TestWatch
+Lightweight **log monitoring tool** for automated regression runs.
+
+🔗 https://github.com/gbvk312/testwatch
+
+---
+
+### 🧪 Regression Flakiness Heatmap Scorer
+Detects **flaky tests** from automation logs and visualizes failures using a **heatmap scoring approach**.
+
+🔗 https://github.com/gbvk312/Regression-Flakiness-Heatmap-Scorer
+
+---
+
+# 📊 GitHub Stats
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=gbvk312&show_icons=true&theme=tokyonight&hide_border=true)
+
+![GitHub Streak](https://streak-stats.demolab.com/?user=gbvk312&theme=tokyonight&hide_border=true)
+
+---
+
+# 📈 Most Used Languages
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=gbvk312&layout=compact&theme=tokyonight&langs_count=8&hide_border=true)
+
+---
+
+# 📅 Contribution Activity
 
 ![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=gbvk312&theme=tokyo-night)
 
 ---
 
-## 🏆 GitHub Achievements
+# 🏆 GitHub Achievements
 
-![Trophies](https://github-profile-trophy.onrender.com/?username=gbvk312&theme=tokyonight)
+![Trophies](https://github-profile-trophy.onrender.com/?username=gbvk312&theme=tokyonight&no-frame=true)
 
 ---
 
-## 👀 Profile Views
+# 👀 Profile Views
 
 ![Profile Views](https://komarev.com/ghpvc/?username=gbvk312&label=Profile%20Views&color=0e75b6&style=flat)
 
 ---
 
-## 📫 Connect With Me
+# 🎯 2026 Open Source Goal
+
+Build an **open-source toolkit for telecom test engineers**.
+
+Focus areas:
+
+- 5G log analysis tools
+- test automation utilities
+- regression failure analyzers
+- test monitoring dashboards
+
+⭐ Target: **100+ GitHub Stars**
+
+---
+
+# 📫 Connect With Me
 
 🐙 GitHub: https://github.com/gbvk312  
-💼 LinkedIn: [<!-- Add your LinkedIn URL here --> LinkedIn Profile](https://linkedin.com/in/YOUR_PROFILE_HERE)
+
+💼 LinkedIn: https://linkedin.com/in/YOUR_PROFILE
 
 ---
 
-## 🌍 Open Source Goals
+# ⚡ Fun Fact
 
-- Build tools for **telecom test automation**
-- Create useful **Python utilities for developers**
-- Share knowledge through **open-source projects**
-- Reach **100+ ⭐ on a GitHub project**
-
----
-
-## ⚡ Fun Fact
-
-I enjoy **automating repetitive testing tasks and converting complex workflows into simple Python scripts.**
+I enjoy **turning repetitive telecom testing workflows into simple Python automation tools.**
 
 ---
 
 > **"Quality is never an accident; it is always the result of intelligent effort."**  
 > — John Ruskin
-
-⭐ Always eager to learn, collaborate, and contribute to open source!
