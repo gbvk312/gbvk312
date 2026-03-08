@@ -17,16 +17,6 @@
 
 ---
 
-## 🏷️ Skills & Technologies
-
-![Python](https://img.shields.io/badge/Python-Automation-blue?style=for-the-badge&logo=python)
-![Linux](https://img.shields.io/badge/Linux-System-green?style=for-the-badge&logo=linux)
-![Docker](https://img.shields.io/badge/Docker-Containerization-blue?style=for-the-badge&logo=docker)
-![Git](https://img.shields.io/badge/Git-VersionControl-orange?style=for-the-badge&logo=git)
-![Bash](https://img.shields.io/badge/Bash-Scripting-black?style=for-the-badge&logo=gnubash)
-
----
-
 ## 🧰 Tech Stack
 
 <p>
@@ -47,27 +37,27 @@
 
 ## 🧠 Currently Building
 
-🚀 **[5gtestscope](https://github.com/gbvk312/5gtestscope)**  
-Smart 5G Log Analyzer for Test Engineers Goal: Automatically analyze 5G gNodeB / simulator logs and generate failure insights + KPIs.
+* 🚀 **[5gtestscope](https://github.com/gbvk312/5gtestscope)**:  
+  Smart 5G Log Analyzer for Test Engineers. Goal: Automatically analyze 5G gNodeB/simulator logs and generate failure insights & KPIs.
 
-🤖 **[test-report-gen](https://github.com/gbvk312/test-report-gen)**  
-Test report generator which takes input as pytest logs automation logs network test logs and generates output as HTML report Charts Failure summary.
+* 🤖 **[test-report-gen](https://github.com/gbvk312/test-report-gen)**:  
+  Test report generator that takes pytest logs, automation logs, and network test logs as input to generate HTML reports, charts, and failure summaries.
 
-📊 **[test-monitor-dashboard](https://github.com/gbvk312/test-monitor-dashboard)**  
-Python tool using Streamlit, Shows: running tests, failures, metrics, logs.
+* 📊 **[test-monitor-dashboard](https://github.com/gbvk312/test-monitor-dashboard)**:  
+  Python tool using Streamlit that shows running tests, failures, metrics, and logs.
 
 ---
 
 ## 🚀 Featured Projects
 
-### 📊 [5g-log-analyzer](https://github.com/gbvk312/5g-log-analyzer)
-Smart 5G Log Analyzer for parsing and analyzing telecom test logs.
+* 📊 **[5g-log-analyzer](https://github.com/gbvk312/5g-log-analyzer)**:  
+  Smart 5G Log Analyzer for parsing and analyzing telecom test logs.
 
-### 🤖 [testwatch](https://github.com/gbvk312/testwatch)
-This is a simple but powerful log monitoring tool.
+* 🤖 **[testwatch](https://github.com/gbvk312/testwatch)**:  
+  A simple but powerful log monitoring tool.
 
-### 🧪 [Regression-Flakiness-Heatmap-Scorer](https://github.com/gbvk312/Regression-Flakiness-Heatmap-Scorer)
-Automatically extracts failure information from logs and scores flakiness using a heatmap approach.
+* 🧪 **[Regression-Flakiness-Heatmap-Scorer](https://github.com/gbvk312/Regression-Flakiness-Heatmap-Scorer)**:  
+  Automatically extracts failure information from logs and scores flakiness using a heatmap approach.
 
 ---
 
@@ -81,7 +71,7 @@ Automatically extracts failure information from logs and scores flakiness using 
 
 ## 📈 Most Used Languages
 
-![Top Languages](https://github-readme-stats.12b4f.repl.co/api/top-langs/?username=gbvk312&layout=compact&theme=tokyonight&langs_count=6)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=gbvk312&layout=compact&theme=tokyonight&langs_count=6)
 
 ---
 
@@ -106,7 +96,7 @@ Automatically extracts failure information from logs and scores flakiness using 
 ## 📫 Connect With Me
 
 🐙 GitHub: https://github.com/gbvk312  
-💼 LinkedIn: (Add your LinkedIn profile here)
+💼 LinkedIn: [<!-- Add your LinkedIn URL here --> LinkedIn Profile](https://linkedin.com/in/YOUR_PROFILE_HERE)
 
 ---
 
