@@ -107,11 +107,11 @@ In addition to telecom platforms, I frequently build production-ready developer 
 
 ---
 
+<!-- Broken Trophies API - Hiding until service is restored
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=gbvk312&theme=tokyonight&no-bg=true&margin-w=15" alt="Trophies" />
 </p>
-
----
+-->
 
 ### 🎯 2026 Vision
 
