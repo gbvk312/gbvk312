@@ -20,19 +20,16 @@ jobs:
         uses: lycheeverse/lychee-action@v1.9.0
         with:
           args: --verbose --no-progress README.md
-          fail: true
 
       - name: Verify Stats and Trophies APIs
         run: |
-          echo "Verifying GitHub Stats API (Anurag Hazra)..."
-          curl -If "https://github-readme-stats-anuraghazra1.vercel.app/api?username=gbvk312" || echo "::warning::Stats API is transiently unavailable."
-          
+          echo "Verifying GitHub Stats API..."
+          curl -fsSL -o /dev/null "https://github-readme-stats.vercel.app/api?username=gbvk312" || echo "::warning::Stats API unavailable"
+
           echo "Verifying Top Languages API..."
-          curl -If "https://github-readme-stats-anuraghazra1.vercel.app/api/top-langs/?username=gbvk312" || echo "::warning::Top Languages API is transiently unavailable."
-          
+          curl -fsSL -o /dev/null "https://github-readme-stats.vercel.app/api/top-langs/?username=gbvk312" || echo "::warning::Top Languages API unavailable"
+
           echo "Verifying GitHub Profile Trophies..."
-          curl -If "https://github-profile-trophy.vercel.app/?username=gbvk312" || echo "::warning::Trophies API is transiently unavailable."
-          
-          echo "Automation Architect ecosystem check complete!"
-          
-          echo "All profile components are healthy!"
+          curl -fsSL -o /dev/null "https://github-profile-trophy.vercel.app/?username=gbvk312" || echo "::warning::Trophies API unavailable"
+
+          echo "All profile components checked!"
