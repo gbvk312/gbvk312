@@ -47,22 +47,23 @@ jobs:
           }
 
           # 1. Core Visuals (Critical)
-          check_url "GitHub Stats (Anurag Hazra)" "https://github-readme-stats-anuraghazra1.vercel.app/api?username=gbvk312" "true"
-          check_url "Top Languages" "https://github-readme-stats-anuraghazra1.vercel.app/api/top-langs/?username=gbvk312" "true"
-          check_url "Capsule Render (Header)" "https://capsule-render.vercel.app/api?type=waving&color=gradient&height=280&section=header&text=Bhanu%20Vamsi%20Krishna" "true"
+          check_url "GitHub Stats (Anurag Hazra)" "https://github-readme-stats-anuraghazra1.vercel.app/api?username=gbvk312&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F7FF&icon_color=0066FF" "true"
+          check_url "Top Languages" "https://github-readme-stats-anuraghazra1.vercel.app/api/top-langs/?username=gbvk312&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F7FF" "true"
+          check_url "Capsule Render (Header)" "https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,2,3,4,5,6,30&height=280&section=header&text=Bhanu%20Vamsi%20Krishna&fontSize=48&fontColor=ffffff&fontAlignY=45&animation=fadeIn" "true"
           
           # 2. Dynamic Features (Non-Critical)
-          check_url "Typing SVG" "https://readme-typing-svg.herokuapp.com/?color=00F7FF&size=28&center=true&vCenter=true&width=800&lines=The+Automation+Architect" "false"
-          check_url "Skill Icons" "https://skillicons.dev/icons?i=python,bash,linux,docker,git" "false"
-          check_url "Activity Graph" "https://github-readme-activity-graph.vercel.app/graph?username=gbvk312" "false"
+          check_url "Typing SVG" "https://readme-typing-svg.herokuapp.com/?color=00F7FF&size=28&center=true&vCenter=true&width=800&lines=The+Automation+Architect+🤖;5G+Protocol+Orchestrator;Python+Automation+Specialist;Telecom+Ecosystem+Builder" "false"
+          check_url "Skill Icons" "https://skillicons.dev/icons?i=python,bash,linux,docker,git,github,vscode,py,prometheus,grafana&perline=10" "false"
+          check_url "Activity Graph" "https://github-readme-activity-graph.vercel.app/graph?username=gbvk312&theme=tokyo-night&bg_color=0D1117&color=00F7FF&line=0066FF&point=ffffff" "false"
           
           # 3. Assets & Analytics (Non-Critical)
           check_url "Contribution Snake" "https://raw.githubusercontent.com/gbvk312/gbvk312/output/github-contribution-grid-snake.svg" "false"
-          check_url "Visitor Badge" "https://api.visitorbadge.io/api/visitors?path=gbvk312" "false"
-          check_url "Profile Views" "https://komarev.com/ghpvc/?username=gbvk312" "false"
+          check_url "Visitor Badge" "https://api.visitorbadge.io/api/visitors?path=gbvk312&label=Profile%20Visitors&countColor=%2300F7FF&style=flat-square" "false"
+          check_url "Profile Views" "https://komarev.com/ghpvc/?username=gbvk312&label=Profile%20Views&color=00F7FF&style=flat-square" "false"
           
           # 4. Previously Broken / Optional
-          check_url "Profile Trophies" "https://github-profile-trophy.vercel.app/?username=gbvk312" "false"
+          # Trophies are currently commented out in README.md, but keeping the check as non-critical.
+          check_url "Profile Trophies" "https://github-profile-trophy.vercel.app/?username=gbvk312&theme=tokyonight&no-bg=true&margin-w=15" "false"
 
           if [ $FAILED -ne 0 ]; then
             echo "::error::Critical profile components are missing or broken!"

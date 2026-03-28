@@ -13,7 +13,8 @@ description: Perform a health check on the profile components (stats, metrics, l
 
 3.  **Sync Metrics & Snake**:
     *   If the "Snake" image is broken, run `git fetch origin output:output --force` and verify `github-contribution-grid-snake.svg` exists.
-    *   If the "Achievements" or "Metrics" images are broken, run `git fetch origin metrics:metrics --force` to sync the metrics branch.
+    *   **Note**: The "Achievements" and "Metrics" images (on `metrics` branch) are currently **secondary/legacy** and not displayed in the main `README.md`.
+    *   If maintenance is required for these secondary components, run `git fetch origin metrics:metrics --force` to sync the metrics branch.
     *   Verify if the files `github-achievements.svg` and `github-metrics.svg` exist on that branch.
 
 4.  **Report**:
