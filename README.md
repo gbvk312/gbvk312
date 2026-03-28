@@ -107,11 +107,11 @@ In addition to telecom platforms, I frequently build production-ready developer 
 ### 🏆 Achievements & Metrics
 
 <p align="center">
-  <img src="https://github-profile-trophy.onrender.com/?username=gbvk312&theme=tokyonight&no-frame=true&margin-w=15" alt="Trophies" />
+  <img src="https://raw.githubusercontent.com/gbvk312/gbvk312/metrics/github-achievements.svg" alt="Achievements" />
 </p>
 
 <p align="center">
-  <img src="https://metrics.lecoq.io/gbvk312?template=classic&base.header=0&base.activity=1&base.community=1&base.repositories=1&base.metadata=0&languages=1&introduction=1&lines=1&config.timezone=Asia%2FKolkata" alt="Metrics" width="100%" />
+  <img src="https://raw.githubusercontent.com/gbvk312/gbvk312/metrics/github-metrics.svg" alt="Metrics" width="100%" />
 </p>
 
 ---
