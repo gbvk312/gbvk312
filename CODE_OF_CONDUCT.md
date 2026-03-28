@@ -10,7 +10,8 @@ Examples of behavior that contributes to a positive environment for our communit
 * Giving and gracefully accepting constructive feedback
 * Accepting responsibility and apologizing to those affected by our mistakes, and learning from the experience
 * Focusing on what is best for the overall community
-* Showing empathy and kindness toward other people
 
 ## Enforcement
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the project maintainers.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the project maintainer at **gbvk.312@gmail.com**. All complaints will be reviewed and investigated promptly and fairly.
+
+All community leaders have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, and will communicate reasons for moderation decisions when appropriate.

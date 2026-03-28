@@ -94,8 +94,8 @@ In addition to telecom platforms, I frequently build production-ready developer 
 ### 📊 GitHub Insights
 
 <p align="center">
-  <img src="https://github-readme-stats-anuraghazra1.vercel.app/api?username=gbvk312&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F7FF&icon_color=0066FF" alt="GitHub Stats" width="48%" />
-  <img src="https://github-readme-stats-anuraghazra1.vercel.app/api/top-langs/?username=gbvk312&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F7FF" alt="Top Languages" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=gbvk312&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F7FF&icon_color=0066FF" alt="GitHub Stats" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gbvk312&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F7FF" alt="Top Languages" width="48%" />
 </p>
 
 <p align="center">
@@ -143,6 +143,12 @@ Check it out here: **[gbvk312/telecom-test-tools](https://github.com/gbvk312/tel
   &nbsp;
   <img src="https://komarev.com/ghpvc/?username=gbvk312&label=Profile%20Views&color=00F7FF&style=flat-square" alt="Profile Views" />
 </p>
+
+---
+
+<div align="center">
+  <a href="LICENSE">LICENSE</a> • <a href="CONTRIBUTING.md">CONTRIBUTING</a> • <a href="CODE_OF_CONDUCT.md">CODE OF CONDUCT</a>
+</div>
 
 <p align="center">
   <i>"Quality is never an accident; it is always the result of intelligent effort." — John Ruskin</i>

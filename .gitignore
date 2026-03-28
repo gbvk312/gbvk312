@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a project
+.Spotlight-V100
+.Trashes
+
+# Workspace
+.vscode/
+.idea/
+
+# Local python environments
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Artifacts
+node_modules/
+dist/
+build/
