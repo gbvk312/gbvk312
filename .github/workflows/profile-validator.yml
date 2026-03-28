@@ -1,0 +1,39 @@
+name: Profile Health Check
+
+on:
+  schedule:
+    - cron: '0 12 * * *' # Once a day at noon
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - 'README.md'
+
+jobs:
+  validate-profile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Check for broken links (Lychee)
+        uses: lycheeverse/lychee-action@v1.9.0
+        with:
+          args: --verbose --no-progress README.md
+          fail: true
+
+      - name: Verify Stats and Metrics APIs
+        run: |
+          echo "Verifying GitHub Stats API..."
+          curl -If "https://github-readme-stats-anuraghazra1.vercel.app/api?username=gbvk312" || exit 1
+          
+          echo "Verifying Top Languages API..."
+          curl -If "https://github-readme-stats-anuraghazra1.vercel.app/api/top-langs/?username=gbvk312" || exit 1
+          
+          echo "Verifying Metrics SVG..."
+          curl -If "https://raw.githubusercontent.com/gbvk312/gbvk312/metrics/github-metrics.svg" || exit 1
+          
+          echo "Verifying Achievements SVG..."
+          curl -If "https://raw.githubusercontent.com/gbvk312/gbvk312/metrics/github-achievements.svg" || exit 1
+          
+          echo "All profile components are healthy!"
