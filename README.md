@@ -6,7 +6,7 @@
 <h1 align="center">Hi there, I'm Bhanu Vamsi Krishna 👋</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?color=00F7FF&size=28&center=true&vCenter=true&width=800&lines=5G+Test+Engineer;Python+Automation+Architect;Telecom+Toolkit+Maintainer;Open+Source+Builder" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com/?color=00F7FF&size=28&center=true&vCenter=true&width=800&lines=The+Automation+Architect+🤖;5G+Protocol+Orchestrator;Python+Automation+Specialist;Telecom+Ecosystem+Builder" alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -22,9 +22,8 @@
 
 <div align="center">
 
-### 📡 5G Test Engineer & Automation Architect
-
-*Specializing in gNodeB simulator testing, protocol analysis, and intelligent test orchestration.*
+### 🤖 The Automation Architect
+*Orchestrating complex 5G protocol validation, intelligent test frameworks, and autonomous triage pipelines.*
 
 </div>
 
@@ -102,16 +101,14 @@ In addition to telecom platforms, I frequently build production-ready developer 
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=gbvk312&theme=tokyo-night&bg_color=0D1117&color=00F7FF&line=0066FF&point=ffffff" alt="Activity Graph" width="100%" />
 </p>
 
----
-
-### 🏆 Achievements & Metrics
-
 <p align="center">
-  <img src="https://raw.githubusercontent.com/gbvk312/gbvk312/metrics/github-achievements.svg" alt="Achievements" />
+  <img src="https://raw.githubusercontent.com/gbvk312/gbvk312/output/github-contribution-grid-snake.svg" alt="Snake animation" />
 </p>
 
+---
+
 <p align="center">
-  <img src="https://raw.githubusercontent.com/gbvk312/gbvk312/metrics/github-metrics.svg" alt="Metrics" width="100%" />
+  <img src="https://github-profile-trophy.vercel.app/?username=gbvk312&theme=tokyonight&no-bg=true&margin-w=15" alt="Trophies" />
 </p>
 
 ---
