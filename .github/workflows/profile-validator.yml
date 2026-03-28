@@ -1,4 +1,4 @@
-name: Automation Architect: Profile Health Check
+name: "Automation Architect: Profile Health Check"
 
 on:
   schedule:
@@ -6,8 +6,8 @@ on:
   workflow_dispatch:
   push:
     branches: [ main ]
-    paths:
-      - 'README.md'
+    # paths:
+    #   - 'README.md'
 
 jobs:
   validate-profile:
