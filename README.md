@@ -34,9 +34,27 @@
 
 A unified, open-source ecosystem designed for **telecom and 5G test engineers**. It combines log analysis, regression monitoring, and flakiness detection into a single connected platform.
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/gbvk312/telecom-test-tools/main/docs/architecture.png" alt="TTT Architecture" width="80%" onerror="this.src='https://placehold.co/800x200?text=Telecom+Test+Toolkit+Architecture'" />
-</p>
+<div align="center">
+  <pre class="mermaid">
+    flowchart LR
+    A["🔄 Automation Tests"] --> B["📁 Raw Logs"]
+
+    B --> C["testwatch\n(Quick Triage)"]
+    B --> D["log_analyzer\n(Protocol Analysis)"]
+    B --> E["testscope\n(KPI Engine)"]
+
+    C --> F["📊 Pipeline Output\n(JSON)"]
+    D --> F
+    E --> F
+
+    F --> G["flakiness_scorer\n(Historical Trends)"]
+    F --> H["report_gen\n(HTML Reports)"]
+
+    G --> I["dashboard\n(Live UI)"]
+    H --> I
+    F --> I
+  </pre>
+</div>
 
 **Key Components within the Ecosystem:**
 - 🔍 **TestWatch**: Rapid log triage and failure pattern matching.
@@ -76,8 +94,8 @@ In addition to telecom platforms, I frequently build production-ready developer 
 ### 📊 GitHub Insights
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=gbvk312&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F7FF&icon_color=0066FF" alt="GitHub Stats" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gbvk312&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F7FF" alt="Top Languages" width="48%" />
+  <img src="https://github-readme-stats-anuraghazra1.vercel.app/api?username=gbvk312&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F7FF&icon_color=0066FF" alt="GitHub Stats" width="48%" />
+  <img src="https://github-readme-stats-anuraghazra1.vercel.app/api/top-langs/?username=gbvk312&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F7FF" alt="Top Languages" width="48%" />
 </p>
 
 <p align="center">
