@@ -6,8 +6,8 @@ on:
   workflow_dispatch:
   push:
     branches: [ main ]
-    # paths:
-    #   - 'README.md'
+    paths:
+      - 'README.md'
 
 jobs:
   validate-profile:
