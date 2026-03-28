@@ -48,6 +48,18 @@ A unified, open-source ecosystem designed for **telecom and 5G test engineers**.
 
 ---
 
+### 🛠️ Open Source CLI & Utilities
+
+In addition to telecom platforms, I frequently build production-ready developer tools and automation utilities:
+
+- 📧 **[email-sender-automation](https://github.com/gbvk312/email-sender-automation):** A robust, OOP-based CLI for automating styled emails with seamless attachment handling.
+- 🗂️ **[folder-organizer](https://github.com/gbvk312/folder-organizer):** A fast, rule-based CLI utility to automatically sort and tidy up cluttered directories.
+- 🌐 **[lightweight-url-monitor](https://github.com/gbvk312/lightweight-url-monitor):** A zero-dependency Python background service to monitor uptime and alert on downtime.
+- 🖼️ **[image-compressor](https://github.com/gbvk312/image-compressor):** An iterative, smart image optimizer targeting exact file-size thresholds.
+- 🧹 **[markdown-cleaner](https://github.com/gbvk312/markdown-cleaner):** A text pipeline to clean, format, and normalize Markdown documentation.
+
+---
+
 ### 🧰 Tech Stack & Expertise
 
 <p align="center">
