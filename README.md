@@ -77,6 +77,52 @@ In addition to telecom platforms, I frequently build production-ready developer 
 
 ---
 
+### 📂 Portfolio Collections
+
+To help you navigate my **110+ repositories**, I've organized them into 5 themed collections:
+
+<details>
+<summary><b>🛠️ Essential CLI Tools (25+ Repos)</b></summary>
+
+*A curated collection of practical Python-based CLI tools for data conversion, security scanning, and system utilities.*
+
+> **Key Repositories:** [api-health-checker](https://github.com/gbvk312/api-health-checker) • [http-probe](https://github.com/gbvk312/http-probe) • [jwt-decoder-cli](https://github.com/gbvk312/jwt-decoder-cli) • [port-scanner-cli](https://github.com/gbvk312/port-scanner-cli) • [json-formatter-cli](https://github.com/gbvk312/json-formatter-cli) • [yaml-to-json-cli](https://github.com/gbvk312/yaml-to-json-cli)
+</details>
+
+<details>
+<summary><b>🛡️ DevOps & Infrastructure</b></summary>
+
+*Infrastructure-as-Code and automation tools for Docker, Kubernetes, and environment management.*
+
+> **Key Repositories:** [docker-compose-generator](https://github.com/gbvk312/docker-compose-generator) • [dockerfile-linter-lite](https://github.com/gbvk312/dockerfile-linter-lite) • [dotenv-to-k8s-secret](https://github.com/gbvk312/dotenv-to-k8s-secret) • [env-to-yaml-converter](https://github.com/gbvk312/env-to-yaml-converter)
+</details>
+
+<details>
+<summary><b>📡 5G Telecom Testing Suite</b></summary>
+
+*Specialized protocol analysis and regression monitoring tools for 5G network testing.*
+
+> **Key Repositories:** [5G-TestIQ](https://github.com/gbvk312/5G-TestIQ) • [Sim6G](https://github.com/gbvk312/Sim6G) • [telecom-test-tools](https://github.com/gbvk312/telecom-test-tools) • [5g-log-analyzer](https://github.com/telecom-test-tools/5g-log-analyzer)
+</details>
+
+<details>
+<summary><b>🚀 Developer Productivity</b></summary>
+
+*Git utilities, GitHub automation, dependency checkers, and repository analytics.*
+
+> **Key Repositories:** [git-repo-stats](https://github.com/gbvk312/git-repo-stats) • [git-hooks-manager](https://github.com/gbvk312/git-hooks-manager) • [github-gemma-agent](https://github.com/gbvk312/github-gemma-agent) • [stale-branch-cleanup](https://github.com/gbvk312/stale-branch-cleanup)
+</details>
+
+<details>
+<summary><b>📱 Personal Applications</b></summary>
+
+*Standalone productivity apps, including habit trackers, finance tools, and secure notes.*
+
+> **Key Repositories:** [daily-habit-tracker](https://github.com/gbvk312/daily-habit-tracker) • [personal-expense-tracker](https://github.com/gbvk312/personal-expense-tracker) • [password-generator](https://github.com/gbvk312/password-generator) • [resume-builder](https://github.com/gbvk312/resume-builder)
+</details>
+
+---
+
 ### 🧰 Tech Stack & Expertise
 
 <p align="center">
