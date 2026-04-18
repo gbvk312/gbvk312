@@ -6,7 +6,7 @@
 <h1 align="center">Hi there, I'm Bhanu Vamsi Krishna 👋</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?color=00F7FF&size=28&center=true&vCenter=true&width=800&lines=The+Automation+Architect+🤖;5G+Protocol+Orchestrator;Python+Automation+Specialist;Telecom+Ecosystem+Builder" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com/?color=00F7FF&size=28&center=true&vCenter=true&width=800&lines=The+Automation+Architect+🤖;Hybrid-AI+Security+Sentinel+🛡️;MCP+Protocol+Specialist;5G+Telecom+Orchestrator;Python+Automation+Expert" alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -22,14 +22,26 @@
 
 <div align="center">
 
-### 🤖 The Automation Architect
-*Orchestrating complex 5G protocol validation, intelligent test frameworks, and autonomous triage pipelines.*
+### 🤖 The Intelligence Architect
+*Engineering secure AI agents, 5G protocol validation engines, and autonomous security triaging pipelines.*
 
 </div>
 
 ---
 
-### 🚀 Flagship Project: [Telecom Test Toolkit (TTT)](https://github.com/gbvk312/telecom-test-tools)
+### 🛡️ Flagship Project: [ShieldAgent-MCP](https://github.com/gbvk312/shield-agent-mcp)
+
+**The Hybrid-AI Security & Quality Sentinel for the MCP Era.**
+A proactive security auditor that combines high-speed local scanning with deep LLM intelligence (Gemini 1.5 Pro) to protect codebases from PII leaks and architectural vulnerabilities.
+
+- 🏗️ **MCP Native**: Seamlessly integrates with AI assistants like Claude, Cursor, and ChatGPT.
+- 🔍 **Dual-Layer Audit**: Local Regex-based sentinel + Cloud AI deep-logic analysis.
+- 🛡️ **Security Gates**: Automated Git hooks to prevent data exposure before it happens.
+- ⚡ **Performance-First**: Built for speed and privacy in the AI-native development workflow.
+
+---
+
+### 📡 Industry Ecosystem: [Telecom Test Toolkit (TTT)](https://github.com/gbvk312/telecom-test-tools)
 
 A unified, open-source ecosystem designed for **telecom and 5G test engineers**. It combines log analysis, regression monitoring, and flakiness detection into a single connected platform.
 
@@ -79,14 +91,14 @@ In addition to telecom platforms, I frequently build production-ready developer 
 
 ### 📂 Portfolio Collections
 
-To help you navigate my **110+ repositories**, I've organized them into 5 themed collections:
+To help you navigate my **115+ repositories**, I've organized them into 5 themed collections:
 
 <details>
 <summary><b>🛠️ Essential CLI Tools (25+ Repos)</b></summary>
 
 *A curated collection of practical Python-based CLI tools for data conversion, security scanning, and system utilities.*
 
-> **Key Repositories:** [api-health-checker](https://github.com/gbvk312/api-health-checker) • [http-probe](https://github.com/gbvk312/http-probe) • [jwt-decoder-cli](https://github.com/gbvk312/jwt-decoder-cli) • [port-scanner-cli](https://github.com/gbvk312/port-scanner-cli) • [json-formatter-cli](https://github.com/gbvk312/json-formatter-cli) • [yaml-to-json-cli](https://github.com/gbvk312/yaml-to-json-cli)
+> **Key Repositories:** [api-health-checker](https://github.com/gbvk312/api-health-checker) • [pii-scanner-cli](https://github.com/gbvk312/pii-scanner-cli) • [secret-scanner-cli](https://github.com/gbvk312/secret-scanner-cli) • [jwt-decoder-cli](https://github.com/gbvk312/jwt-decoder-cli) • [json-formatter-cli](https://github.com/gbvk312/json-formatter-cli) • [markdown-to-pdf-cli](https://github.com/gbvk312/markdown-to-pdf-cli)
 </details>
 
 <details>
@@ -123,15 +135,14 @@ To help you navigate my **110+ repositories**, I've organized them into 5 themed
 
 ---
 
-### 🧰 Tech Stack & Expertise
-
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,bash,linux,docker,git,github,vscode,py,prometheus,grafana&perline=10" alt="Tech Stack" />
+  <img src="https://skillicons.dev/icons?i=python,bash,linux,docker,git,github,vscode,py,prometheus,grafana,ansible,terraform&perline=12" alt="Tech Stack" />
 </p>
 
-**Domain Expertise:**
+**Core Competencies:**
+- **Agentic AI**: Model Context Protocol (MCP), LLM Integration, SecOps Agents.
 - **Telecom**: 5G NR, gNodeB Simulator, 3GPP Protocols, Wireshark.
-- **Automation**: Pytest, CI/CD Pipelines, Log Parsing, Failure Root-Cause Analysis.
+- **Automation**: Pytest, CI/CD Pipelines, Log Parsing, Root-Cause Analysis.
 - **Monitoring**: Real-time dashboards, KPI tracking, Regression Analytics.
 
 ---
@@ -153,11 +164,9 @@ To help you navigate my **110+ repositories**, I've organized them into 5 themed
 
 ---
 
-<!-- Broken Trophies API - Hiding until service is restored
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=gbvk312&theme=tokyonight&no-bg=true&margin-w=15" alt="Trophies" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=gbvk312&theme=tokyonight&hide_border=true&background=0D1117&ring=00F7FF&fire=00F7FF&currStreakLabel=00F7FF" alt="GitHub Streak" />
 </p>
--->
 
 ### 🎯 2026 Vision
 
