@@ -28,4 +28,3 @@ build/
 # Temporary Data
 scratch/
 *.json
-.last_sync
