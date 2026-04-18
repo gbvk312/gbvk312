@@ -24,3 +24,8 @@ __pycache__/
 node_modules/
 dist/
 build/
+
+# Temporary Data
+scratch/
+*.json
+.last_sync
