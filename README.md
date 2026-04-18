@@ -1,94 +1,154 @@
 <!-- PROFILE BANNER -->
 <p align="center">
-  <img src="banner.png" width="100%" alt="Bhanu Vamsi Krishna - Intelligence Architect" />
+  <img src="banner.png" width="100%" alt="Bhanu Vamsi Krishna" />
 </p>
 
-<h1 align="center">Hi there, I'm Bhanu Vamsi Krishna 👋</h1>
+<h1 align="center">Hi, I'm Bhanu Vamsi Krishna 👋</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?color=00F7FF&size=28&center=true&vCenter=true&width=800&lines=The+Intelligence+Architect+🤖;MCP+Protocol+Specialist+⚡;Hybrid-AI+Security+Sentinel+🛡️;Agentic+Workflow+Engineer+🧠;5G+Telecom+Automation+Expert+📡" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com/?color=00F7FF&size=28&center=true&vCenter=true&width=800&lines=Automation+Architect+🤖;Hybrid-AI+Security+Sentinel+🛡️;MCP+Protocol+Specialist;5G+Telecom+Orchestrator;Python+Automation+Expert" alt="Typing SVG" />
 </p>
-
-<p align="center">
-  <a href="https://github.com/gbvk312">
-    <img src="https://img.shields.io/github/followers/gbvk312?label=Followers&style=for-the-badge&color=00F7FF&logo=github&logoColor=0D1117" alt="GitHub followers" />
-  </a>
-  <a href="https://github.com/gbvk312?tab=stars">
-    <img src="https://img.shields.io/github/stars/gbvk312?affiliations=OWNER&style=for-the-badge&color=0066FF&logo=github&logoColor=ffffff" alt="GitHub stars" />
-  </a>
-</p>
-
-<br/>
-
-<div align="center">
-
-### 🤖 The Intelligence Architect
-*Bridging the gap between 5G Protocol engineering and Autonomous Agentic AI. Specialized in Model Context Protocol (MCP), secure LLM orchestrations, and high-speed automation pipelines.*
-
-</div>
 
 ---
 
-### 🛡️ Featured: [ShieldAgent-MCP](https://github.com/gbvk312/shield-agent-mcp)
+### 🚀 About Me
 
-**The Hybrid-AI Security & Quality Sentinel for the MCP Era.**
-A proactive security auditor that combines high-speed local scanning with deep LLM intelligence (Gemini 1.5 Pro) to protect codebases from PII leaks and architectural vulnerabilities.
+I build **AI-powered automation systems** for telecom and developer workflows.  
+My work focuses on combining **5G protocol expertise** with **modern AI systems** like LLMs and MCP-based agents.
 
-- 🏗️ **MCP Native**: Seamlessly integrates with AI assistants like Claude, Cursor, and ChatGPT.
-- 🔍 **Dual-Layer Audit**: Local Regex-based sentinel + Cloud AI deep-logic analysis.
-- 🛡️ **Security Gates**: Automated Git hooks to prevent data exposure before it happens.
-- ⚡ **Performance-First**: Built for speed and privacy in the AI-native development workflow.
+- 🤖 AI-assisted developer tools & automation  
+- 📡 5G protocol testing & log analysis  
+- ⚡ Secure LLM orchestration (MCP, RAG, workflows)  
 
 ---
 
-### 📡 The Ecosystem: [Telecom Test Toolkit (TTT)](https://github.com/gbvk312/telecom-test-tools)
+### 🛡️ Featured Project
 
-**AI-Driven Protocol Validation for 5G Networks.**
-A unified ecosystem designed for telecom and 5G test engineers, now being enhanced with AI-driven log analysis and automated root-cause detection.
+#### 🔹 [ShieldAgent-MCP](https://github.com/gbvk312/shield-agent-mcp)
+
+AI-assisted security and quality scanner for modern codebases.
+
+**What it does:**
+- Scans code for sensitive data (PII) using rule-based detection  
+- Uses LLMs for deeper contextual analysis  
+- Integrates with Git hooks for pre-commit protection  
+
+**Tech:**
+Python • MCP • LLM APIs • Git Hooks  
+
+---
+
+### 📡 Industry Ecosystem: [Telecom Test Toolkit (TTT)](https://github.com/gbvk312/telecom-test-tools)
+
+A unified, open-source ecosystem designed for **telecom and 5G test engineers**. It combines log analysis, regression monitoring, and flakiness detection into a single connected platform.
 
 <div align="center">
   <pre class="mermaid">
-    graph TD
-    A[Raw 5G Logs] --> B{AI Triage Engine}
-    B -->|Pattern Match| C[TestWatch]
-    B -->|Logical Audit| D[Log Analyzer]
-    B -->|Performance KPI| E[TestScope]
-    C & D & E --> F[Unified Intelligence Dashboard]
+    flowchart LR
+    A["🔄 Automation Tests"] --> B["📁 Raw Logs"]
+
+    B --> C["testwatch\n(Quick Triage)"]
+    B --> D["log_analyzer\n(Protocol Analysis)"]
+    B --> E["testscope\n(KPI Engine)"]
+
+    C --> F["📊 Pipeline Output\n(JSON)"]
+    D --> F
+    E --> F
+
+    F --> G["flakiness_scorer\n(Historical Trends)"]
+    F --> H["report_gen\n(HTML Reports)"]
+
+    G --> I["dashboard\n(Live UI)"]
+    H --> I
+    F --> I
   </pre>
 </div>
 
+**Key Capabilities:**
+- 🔍 **TestWatch**: Rapid log triage and failure pattern matching.
+- 📡 **Log Analyzer**: 3GPP protocol-level analysis (ATTACH, RRC, Setup).
+- 🔬 **TestScope**: Smart KPI engine for 5G simulator validation.
+- 📊 **Flakiness Scorer**: Historical stability analysis with failure heatmaps.
+
 ---
 
-### 🛠️ Strategic Tech Stack
+### 🛠️ Tech Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,bash,linux,docker,git,github,vscode,py,prometheus,grafana,ansible,terraform&perline=14" alt="Tech Stack" />
+  <img src="https://skillicons.dev/icons?i=python,bash,linux,docker,git,github,vscode,py,prometheus,grafana,ansible,terraform&perline=12" alt="Tech Stack" />
 </p>
 
-**Command Center Capacities:**
-- **Agentic AI**: Model Context Protocol (MCP), LLM Integration (Gemini, GPT), Custom RAG Systems.
-- **Telecom**: 5G NR Stack, gNodeB Simulator, 3GPP Protocols, Hex-level Log Analysis.
-- **Automation**: Enterprise-grade Pytest suites, CI/CD Hardening, System-level Triage.
+**Core Competencies:**
+- **Agentic AI**: Model Model Context Protocol (MCP), LLM Integration, SecOps Agents.
+- **Telecom**: 5G NR, gNodeB Simulator, 3GPP Protocols, Wireshark.
+- **Automation**: Pytest, CI/CD Pipelines, Log Parsing, Root-Cause Analysis.
 
 ---
 
-### 📊 Intelligence Metrics
+### 📂 Portfolio Collections
 
-<table align="center" width="100%">
-  <tr>
-    <td width="50%" align="center">
-      <img src="https://github-readme-stats-anuraghazra1.vercel.app/api?username=gbvk312&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F7FF&icon_color=0066FF" alt="GitHub Stats" width="100%" />
-    </td>
-    <td width="50%" align="center">
-      <img src="https://github-readme-stats-anuraghazra1.vercel.app/api/top-langs/?username=gbvk312&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F7FF" alt="Top Languages" width="100%" />
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center">
-      <img src="https://github-readme-activity-graph.vercel.app/graph?username=gbvk312&theme=tokyo-night&bg_color=0D1117&color=00F7FF&line=0066FF&point=ffffff" alt="Activity Graph" width="100%" />
-    </td>
-  </tr>
-</table>
+To help you navigate my **115+ repositories**, I've organized them into themed collections:
+
+<details>
+<summary><b>🛠️ Essential CLI Tools (25+ Repos)</b></summary>
+
+*A curated collection of practical Python-based CLI tools for data conversion, security scanning, and system utilities.*
+
+> **Key Repositories:** [api-health-checker](https://github.com/gbvk312/api-health-checker) • [pii-scanner-cli](https://github.com/gbvk312/pii-scanner-cli) • [secret-scanner-cli](https://github.com/gbvk312/secret-scanner-cli) • [jwt-decoder-cli](https://github.com/gbvk312/jwt-decoder-cli) • [json-formatter-cli](https://github.com/gbvk312/json-formatter-cli) • [markdown-to-pdf-cli](https://github.com/gbvk312/markdown-to-pdf-cli)
+</details>
+
+<details>
+<summary><b>🛡️ DevOps & Infrastructure</b></summary>
+
+*Infrastructure-as-Code and automation tools for Docker, Kubernetes, and environment management.*
+
+> **Key Repositories:** [docker-compose-generator](https://github.com/gbvk312/docker-compose-generator) • [dockerfile-linter-lite](https://github.com/gbvk312/dockerfile-linter-lite) • [dotenv-to-k8s-secret](https://github.com/gbvk312/dotenv-to-k8s-secret) • [env-to-yaml-converter](https://github.com/gbvk312/env-to-yaml-converter)
+</details>
+
+<details>
+<summary><b>📡 5G Telecom Testing Suite</b></summary>
+
+*Specialized protocol analysis and regression monitoring tools for 5G network testing.*
+
+> **Key Repositories:** [5G-TestIQ](https://github.com/gbvk312/5G-TestIQ) • [Sim6G](https://github.com/gbvk312/Sim6G) • [telecom-test-tools](https://github.com/gbvk312/telecom-test-tools) • [5g-log-analyzer](https://github.com/telecom-test-tools/5g-log-analyzer)
+</details>
+
+<details>
+<summary><b>🚀 Developer Productivity</b></summary>
+
+*Git utilities, GitHub automation, dependency checkers, and repository analytics.*
+
+> **Key Repositories:** [git-repo-stats](https://github.com/gbvk312/git-repo-stats) • [git-hooks-manager](https://github.com/gbvk312/git-hooks-manager) • [github-gemma-agent](https://github.com/gbvk312/github-gemma-agent) • [stale-branch-cleanup](https://github.com/gbvk312/stale-branch-cleanup)
+</details>
+
+<details>
+<summary><b>📱 Personal Applications</b></summary>
+
+*Standalone productivity apps, including habit trackers, finance tools, and secure notes.*
+
+> **Key Repositories:** [daily-habit-tracker](https://github.com/gbvk312/daily-habit-tracker) • [personal-expense-tracker](https://github.com/gbvk312/personal-expense-tracker) • [password-generator](https://github.com/gbvk312/password-generator) • [resume-builder](https://github.com/gbvk312/resume-builder)
+</details>
+
+---
+
+### 🧠 Currently Exploring
+
+- MCP-based developer agents  
+- Secure LLM pipelines  
+- AI-assisted telecom diagnostics  
+
+---
+
+### 📊 GitHub Insights
+
+<p align="center">
+  <img src="https://github-readme-stats-anuraghazra1.vercel.app/api?username=gbvk312&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F7FF&icon_color=0066FF" alt="GitHub Stats" width="48%" />
+  <img src="https://github-readme-stats-anuraghazra1.vercel.app/api/top-langs/?username=gbvk312&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F7FF" alt="Top Languages" width="48%" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=gbvk312&theme=tokyo-night&bg_color=0D1117&color=00F7FF&line=0066FF&point=ffffff" alt="Activity Graph" width="100%" />
+</p>
 
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=gbvk312&theme=tokyonight&hide_border=true&background=0D1117&ring=00F7FF&fire=00F7FF&currStreakLabel=00F7FF" alt="GitHub Streak" />
@@ -100,27 +160,21 @@ A unified ecosystem designed for telecom and 5G test engineers, now being enhanc
 
 ---
 
-### 📫 Connect with me
+### 📫 Connect
 
 <p align="center">
   <a href="mailto:gbvk.312@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
   <a href="https://github.com/gbvk312">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
   </a>
-</p>
-
-<p align="center">
-  <img src="https://api.visitorbadge.io/api/visitors?path=gbvk312&label=Access%20Count&countColor=%2300F7FF&style=flat-square" alt="Visitor Badge" />
+  &nbsp;
+  <img src="https://api.visitorbadge.io/api/visitors?path=gbvk312&label=Profile%20Visitors&countColor=%2300F7FF&style=flat-square" alt="Visitor Badge" />
 </p>
 
 ---
 
-<div align="center">
-  <a href="LICENSE">LICENSE</a> • <a href="CONTRIBUTING.md">CONTRIBUTING</a> • <a href="CODE_OF_CONDUCT.md">CODE OF CONDUCT</a>
-  <br/>
-  <p align="center">
-    <i>"The best way to predict the future is to automate it."</i>
-  </p>
-</div>
+<p align="center">
+  <i>"The best way to predict the future is to automate it."</i>
+</p>
