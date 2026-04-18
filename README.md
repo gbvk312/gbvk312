@@ -9,10 +9,6 @@
   <img src="https://readme-typing-svg.herokuapp.com/?color=00F7FF&size=28&center=true&vCenter=true&width=800&lines=Automation+Architect+🤖;Hybrid-AI+Security+Sentinel+🛡️;MCP+Protocol+Specialist;5G+Telecom+Orchestrator;Python+Automation+Expert" alt="Typing SVG" />
 </p>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/gbvk312/gbvk312/metrics/github-achievements.svg" alt="Achievements" />
-</p>
-
 ---
 
 ### 🚀 About Me
@@ -43,18 +39,6 @@ A proactive auditor that combines local regex scanning with deep LLM intelligenc
   <img src="https://github-readme-stats-anuraghazra1.vercel.app/api/top-langs/?username=gbvk312&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F7FF" alt="Top Languages" width="48%" />
 </p>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/gbvk312/gbvk312/metrics/github-metrics.svg" alt="Metrics" width="100%" />
-</p>
-
----
-
-### 🗓️ 3D Contribution Graph
-
-<p align="center">
-  <img src="profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph" width="100%" />
-</p>
-
 ---
 
 ### 📂 Portfolio Collections
@@ -76,12 +60,6 @@ A proactive auditor that combines local regex scanning with deep LLM intelligenc
 *Specialized protocol analysis and regression monitoring tools for 5G network testing.*
 > **Key Repositories:** [5G-TestIQ](https://github.com/gbvk312/5G-TestIQ) • [Sim6G](https://github.com/gbvk312/Sim6G)
 </details>
-
----
-
-### ⚡ Recent Activity
-<!--START_SECTION:activity-->
-<!--END_SECTION:activity-->
 
 ---
 
