@@ -44,6 +44,7 @@ graph TD
     Manager["🧠 Manager Agent<br/>(Orchestrator)"]:::orchestrator
     Auditor["🔍 Auditor Agent<br/>(Vulnerability Scan)"]:::orchestrator
     Remediator["🛠️ Remediator Agent<br/>(Patch Application)"]:::orchestrator
+    RedTeam["🔴 Red Team Agent<br/>(Patch Verification)"]:::orchestrator
     
     MCP["🔌 Model Context Protocol<br/>(Secure Bridge)"]:::code
     
@@ -54,10 +55,13 @@ graph TD
     Manager -->|"Delegates Audit"| Auditor
     Auditor -->|"Returns Findings"| Manager
     Manager -->|"Delegates Fixes"| Remediator
-    Remediator -->|"Returns Status"| Manager
+    Remediator -->|"Requests Verification"| RedTeam
+    RedTeam -->|"Bypass Found"| Remediator
+    RedTeam -->|"Patch Secure"| Manager
     
     Auditor <-->|"Queries Tools"| MCP
     Remediator <-->|"Queries Tools"| MCP
+    RedTeam <-->|"Queries Tools"| MCP
     
     MCP <-->|"Executes"| LocalScanner
     LocalScanner -->|"Scans & Edits"| Codebase
