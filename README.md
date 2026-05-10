@@ -30,6 +30,43 @@ I architect **autonomous, multi-agent systems** that secure code, infrastructure
 
 My primary focus: a **unified, local-first security framework** built for the MCP (Model Context Protocol) era.
 
+<details open>
+<summary><b>Ecosystem Architecture</b></summary>
+
+```mermaid
+graph TD
+    %% Styling
+    classDef orchestrator fill:#0D1117,stroke:#00F7FF,stroke-width:2px,color:#C9D1D9
+    classDef agent fill:#0D1117,stroke:#0066FF,stroke-width:2px,color:#C9D1D9
+    classDef code fill:#161B22,stroke:#30363D,stroke-width:1px,color:#8B949E
+
+    %% Nodes
+    Manager["🧠 Manager Agent<br/>(Orchestrator)"]:::orchestrator
+    Auditor["🔍 Auditor Agent<br/>(Vulnerability Scan)"]:::orchestrator
+    Remediator["🛠️ Remediator Agent<br/>(Patch Application)"]:::orchestrator
+    
+    MCP["🔌 Model Context Protocol<br/>(Secure Bridge)"]:::code
+    
+    LocalScanner["🛡️ Shield Agent MCP<br/>(Local Sentinel)"]:::agent
+    Codebase["📁 Local Codebase"]:::code
+
+    %% Relationships
+    Manager -->|"Delegates Audit"| Auditor
+    Auditor -->|"Returns Findings"| Manager
+    Manager -->|"Delegates Fixes"| Remediator
+    Remediator -->|"Returns Status"| Manager
+    
+    Auditor <-->|"Queries Tools"| MCP
+    Remediator <-->|"Queries Tools"| MCP
+    
+    MCP <-->|"Executes"| LocalScanner
+    LocalScanner -->|"Scans & Edits"| Codebase
+```
+
+</details>
+
+<br>
+
 <table>
   <tr>
     <td width="50%" valign="top">
