@@ -11,7 +11,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/gbvk312?tab=repositories"><img src="https://img.shields.io/badge/Repositories-3-0D1117?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <!-- REPO_BADGE_START -->
+  <a href="https://github.com/gbvk312?tab=repositories"><img src="https://img.shields.io/badge/Repositories-7-0D1117?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <!-- REPO_BADGE_END -->
   <a href="https://github.com/gbvk312/shield-agent-mcp"><img src="https://img.shields.io/badge/Flagship-Shield_Agent-00F7FF?style=for-the-badge&logo=shield&logoColor=0D1117" /></a>
   <a href="mailto:gbvk.312@gmail.com"><img src="https://img.shields.io/badge/Reach_Out-Email-0D1117?style=for-the-badge&logo=gmail&logoColor=EA4335" /></a>
 </p>
@@ -73,7 +75,7 @@ graph TD
 
 <table>
   <tr>
-    <td width="50%" valign="top">
+    <td width="33%" valign="top">
       <h4>🔒 <a href="https://github.com/gbvk312/shield-agent-mcp">Shield Agent MCP</a></h4>
       <p><i>The Sentinel — Hybrid-AI Security & Quality Auditor</i></p>
       <ul>
@@ -83,7 +85,7 @@ graph TD
         <li>🤖 Gemini-powered intelligent code review</li>
       </ul>
     </td>
-    <td width="50%" valign="top">
+    <td width="33%" valign="top">
       <h4>🧠 <a href="https://github.com/gbvk312/shield-orchestrator">Shield Orchestrator</a></h4>
       <p><i>The Brain — Multi-Agent DevSecOps Framework</i></p>
       <ul>
@@ -91,6 +93,16 @@ graph TD
         <li>🛠️ Automated vulnerability scanning & remediation</li>
         <li>📊 Network reconnaissance & attack surface mapping</li>
         <li>⚡ Model failover with rate-limit resilience</li>
+      </ul>
+    </td>
+    <td width="33%" valign="top">
+      <h4>⚡ <a href="https://github.com/gbvk312/multi-agent-orchestrator">Multi-Agent Orchestrator</a></h4>
+      <p><i>The Engine — Async Multi-Agent Core</i></p>
+      <ul>
+        <li>🚀 Async-first event-driven architecture for rapid execution</li>
+        <li>🤖 Native support for Gemini context caching</li>
+        <li>🧠 State-preserving conversation & session memory</li>
+        <li>🔌 Highly pluggable framework design</li>
       </ul>
     </td>
   </tr>
@@ -149,6 +161,12 @@ I'm exploring how **MCP** transforms the way AI agents interact with tools, code
 
 <p align="center">
   <img src="https://api.visitorbadge.io/api/visitors?path=gbvk312&label=Profile%20Views&countColor=%2300F7FF&style=flat-square&labelColor=0D1117" alt="Visitor Badge" />
+</p>
+
+<p align="center">
+  <!-- SYSTEM_STATUS_START -->
+  <sub><i>Last System Pulse: 2026-05-17 08:16 UTC • Total Portfolio Stars: ⭐ 0 • Automated via Profile Manager</i></sub>
+  <!-- SYSTEM_STATUS_END -->
 </p>
 
 <p align="center">

@@ -18,15 +18,16 @@ jobs:
           fetch-depth: 0
 
       - name: Dynamic Stats Pulse
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "Syncing profile metrics..."
-          # This is where we could add logic to fetch latest stars, releases, etc.
-          # For now, we'll just ensure the README is touched to keep it active.
+          python3 scripts/update_profile.py
           date > .last_sync
           
       - name: Commit and Push Changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add .last_sync
+          git add README.md .last_sync
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore: profile heartbeat sync [skip ci]" && git push)
