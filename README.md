@@ -14,6 +14,12 @@
   <!-- REPO_BADGE_START -->
   <a href="https://github.com/gbvk312?tab=repositories"><img src="https://img.shields.io/badge/Repositories-7-0D1117?style=for-the-badge&logo=github&logoColor=white" /></a>
   <!-- REPO_BADGE_END -->
+  <!-- TELECOM_BADGE_START -->
+  <a href="https://github.com/telecom-test-tools"><img src="https://img.shields.io/badge/Telecom_Tools-8-0066FF?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <!-- TELECOM_BADGE_END -->
+  <!-- UTILITY_BADGE_START -->
+  <a href="https://github.com/gbvkUtilities"><img src="https://img.shields.io/badge/Utilities-91-00F7FF?style=for-the-badge&logo=github&logoColor=0D1117" /></a>
+  <!-- UTILITY_BADGE_END -->
   <a href="https://github.com/gbvk312/shield-agent-mcp"><img src="https://img.shields.io/badge/Flagship-Shield_Agent-00F7FF?style=for-the-badge&logo=shield&logoColor=0D1117" /></a>
   <a href="mailto:gbvk.312@gmail.com"><img src="https://img.shields.io/badge/Reach_Out-Email-0D1117?style=for-the-badge&logo=gmail&logoColor=EA4335" /></a>
 </p>
@@ -119,6 +125,18 @@ Beyond my personal repos, I maintain large-scale toolkits across dedicated organ
 | [📡 Telecom Test Tools](https://github.com/telecom-test-tools) | 5G Protocol Analysis | Advanced log monitoring, protocol validation, and test automation for telecom infrastructure |
 | [🛠️ gbvk Utilities](https://github.com/gbvkUtilities) | DevEx & Automation | Extensive collection of Python CLI tools for developer productivity and workflow automation |
 
+### 🛠️ gbvk Utilities Spotlight
+*A rotating showcase of developer tools from my 90+ custom utility repositories, updated daily.*
+
+<!-- UTILITY_SPOTLIGHT_START -->
+
+| Tool | Description |
+| :--- | :--- |
+| [🛠️ pii-scanner-cli](https://github.com/gbvkUtilities/pii-scanner-cli) | Scan files for Personally Identifiable Information (PII) like Credit Cards, SSNs, and Emails. |
+| [🛠️ ascii-chart-cli](https://github.com/gbvkUtilities/ascii-chart-cli) | Render beautiful ASCII bar charts, line plots, and sparklines directly in the terminal from CSV, JSON, or piped stdin data. |
+| [🛠️ readme-toc-generator](https://github.com/gbvkUtilities/readme-toc-generator) | A simple, dependency-free CLI tool to automatically generate a Table of Contents for Markdown files. |
+<!-- UTILITY_SPOTLIGHT_END -->
+
 ---
 
 ### 🔬 Current Research: Model Context Protocol (MCP)
@@ -165,7 +183,7 @@ I'm exploring how **MCP** transforms the way AI agents interact with tools, code
 
 <p align="center">
   <!-- SYSTEM_STATUS_START -->
-  <sub><i>Last System Pulse: 2026-05-17 08:16 UTC • Total Portfolio Stars: ⭐ 0 • Automated via Profile Manager</i></sub>
+  <sub><i>Last System Pulse: 2026-05-21 17:04 UTC • Total Portfolio Stars: ⭐ 0 • Automated via Profile Manager</i></sub>
   <!-- SYSTEM_STATUS_END -->
 </p>
 
