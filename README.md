@@ -24,6 +24,12 @@
   <a href="mailto:gbvk.312@gmail.com"><img src="https://img.shields.io/badge/Reach_Out-Email-0D1117?style=for-the-badge&logo=gmail&logoColor=EA4335" /></a>
 </p>
 
+<!-- FOCUS_SECTION_START -->
+<p align="center">
+  <sub>🎯 <b>Current Focus:</b> <a href="https://github.com/gbvk312/multi-agent-orchestrator">Hardening the asynchronous multi-agent orchestrator framework</a></sub>
+</p>
+<!-- FOCUS_SECTION_END -->
+
 ---
 
 ### 🧠 About
@@ -183,8 +189,14 @@ I'm exploring how **MCP** transforms the way AI agents interact with tools, code
 
 <p align="center">
   <!-- SYSTEM_STATUS_START -->
-  <sub><i>Last System Pulse: 2026-05-21 17:04 UTC • Total Portfolio Stars: ⭐ 0 • Automated via Profile Manager</i></sub>
+  <sub><i>Last System Pulse: 2026-05-22 02:52 UTC • Total Portfolio Stars: ⭐ 0 • Automated via Profile Manager</i></sub>
   <!-- SYSTEM_STATUS_END -->
+</p>
+
+<p align="center">
+  <!-- SECURITY_SENTINEL_START -->
+  <sub><i>🛡️ DevSecOps Shield: Scanned & Secure • 0 Secrets • 0 Vulns • Verified by Security Sentinel</i></sub>
+  <!-- SECURITY_SENTINEL_END -->
 </p>
 
 <p align="center">
