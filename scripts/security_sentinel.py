@@ -4,7 +4,7 @@ import re
 import ast
 import json
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 
 # Regex patterns for common secrets/keys
 SECRET_PATTERNS = {
@@ -106,8 +106,12 @@ def audit_file(filepath):
                     "description": "Workflow handles pull request events but lacks custom permissions constraints."
                 })
             if "uses: actions/checkout" in content and "fetch-depth: 0" not in content and "touch" in content:
-                # Suggest checking fetch-depth if touching files
-                pass
+                results["vulnerabilities"].append({
+                    "type": "Shallow Clone Touch Warning",
+                    "line": 1,
+                    "severity": "LOW",
+                    "description": "Workflow uses checkout action without fetch-depth: 0 but performs file touches, which might fail or be inaccurate on shallow clones."
+                })
 
     except Exception as e:
         print(f"Error auditing file {filepath}: {e}", file=sys.stderr)
@@ -134,7 +138,7 @@ def main():
         "files_scanned": 0,
         "secrets_found": 0,
         "vulnerabilities_found": 0,
-        "last_audit": datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC"),
+        "last_audit": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         "details": []
     }
     

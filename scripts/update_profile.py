@@ -6,7 +6,7 @@ import sys
 import urllib.request
 import os
 import random
-from datetime import datetime
+from datetime import datetime, timezone
 
 def run_command(cmd):
     """Runs a shell command and returns the output string, or raises an exception."""
@@ -95,9 +95,9 @@ def fetch_current_focus_inner():
             if issues and isinstance(issues, list):
                 issue = issues[0]
                 title = issue.get("title")
-                url = issue.get("html_url")
+                issue_url = issue.get("html_url")
                 print(f"Focus found: {title}")
-                return f'<p align="center">\n  <sub>🎯 <b>Current Focus:</b> <a href="{url}">{title}</a></sub>\n</p>'
+                return f'<p align="center">\n  <sub>🎯 <b>Current Focus:</b> <a href="{issue_url}">{title}</a></sub>\n</p>'
     except Exception as e:
         print(f"API fetch for focus issues failed: {e}. Falling back to gh CLI...")
         
@@ -108,9 +108,9 @@ def fetch_current_focus_inner():
         issues = json.loads(output)
         if issues:
             title = issues[0].get("title")
-            url = issues[0].get("url")
+            issue_url = issues[0].get("url")
             print(f"Focus found via gh CLI: {title}")
-            return f'<p align="center">\n  <sub>🎯 <b>Current Focus:</b> <a href="{url}">{title}</a></sub>\n</p>'
+            return f'<p align="center">\n  <sub>🎯 <b>Current Focus:</b> <a href="{issue_url}">{title}</a></sub>\n</p>'
     except Exception as e:
         print(f"gh CLI fetch for focus issues failed: {e}")
         
@@ -142,8 +142,7 @@ def run_security_audit_inner():
                 return f'<sub><i>⚠️ DevSecOps Shield: THREAT DETECTED • {secrets} Secrets • {vulns} Vulns • Verified by Security Sentinel</i></sub>'
     except Exception as e:
         print(f"Security sentinel run failed: {e}")
-        
-    return '<sub><i>🛡️ DevSecOps Shield: Scanned & Secure • 0 Issues • Verified by Security Sentinel</i></sub>'
+        return '<sub><i>🛡️ DevSecOps Shield: Sentinel Audit Failed • Verified by Security Sentinel</i></sub>'
 
 def main():
     try:
@@ -232,7 +231,7 @@ def main():
 
         # Update System Status
         status_pattern = r"(<!-- SYSTEM_STATUS_START -->\s*).*?(\s*<!-- SYSTEM_STATUS_END -->)"
-        current_time = datetime.utcnow().strftime("%Y-%m-%d %H:%M")
+        current_time = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M")
         new_status_html = f'<sub><i>Last System Pulse: {current_time} UTC • Total Portfolio Stars: ⭐ {total_stars} • Automated via Profile Manager</i></sub>'
         readme_content = re.sub(status_pattern, rf"\1{new_status_html}\2", readme_content, flags=re.DOTALL)
         print("Updated README System Pulse footer status.")
