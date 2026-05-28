@@ -122,6 +122,35 @@ graph TD
 
 ---
 
+### 🛸 Specialized Showcases
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h4>🎮 <a href="https://github.com/gbvk312/clash-of-clans-premium-dashboard">Clash of Clans Premium Dashboard</a></h4>
+      <p><i>The Visualizer — Live Gaming Analytics & Strategy Hub</i></p>
+      <ul>
+        <li>💎 Premium glassmorphic design featuring custom visualizers</li>
+        <li>📊 Live analytics: player comparisons and clan war attack matrices</li>
+        <li>⚡ Zero-dependency browser caching with high-performance LRU cache</li>
+        <li>🌐 Clean integration with official Supercell Clash of Clans APIs</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h4>📡 <a href="https://github.com/gbvk312/3GPP-Knowledge-Graph-Agent">3GPP Knowledge Graph Agent</a></h4>
+      <p><i>The Architect — Serverless Telecom Intelligence System</i></p>
+      <ul>
+        <li>🧠 Multi-agent RAG reasoning engine for parsing telecom specs</li>
+        <li>🕸️ Knowledge graph mapping complex 3GPP protocol relationships</li>
+        <li>☁️ Enterprise AWS Stack: Bedrock, Neptune Graph Database, and CDK</li>
+        <li>🔬 Interactive dependency graphs designed for rapid protocol analysis</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
 ### 📡 Specialized Hubs
 
 Beyond my personal repos, I maintain large-scale toolkits across dedicated organizations:
@@ -155,18 +184,22 @@ I'm exploring how **MCP** transforms the way AI agents interact with tools, code
 
 ---
 
-### 🛠️ Core Tech Stack
+### 🛠️ Tech Stack & Domain Specialization
 
-<p align="center">
-  <picture>
-    <img src="https://skillicons.dev/icons?i=python,bash,linux,docker,git,github,vscode&perline=7" alt="Primary Stack" />
-  </picture>
+<div align="center">
+
+| Domain | Technologies & Tools |
+| :--- | :--- |
+| **Agentic & AI Core** | `Gemini API` `AWS Bedrock` `LangChain` `Multi-Agent Routing` `RAG` |
+| **Telecom & Protocols** | `5G Core (5GC)` `3GPP Standards` `Protocol Verification` `L2/L3 Layers` |
+| **Backend & APIs** | `Python` `FastAPI` `PostgreSQL` `Amazon Neptune` `JSON-RPC` `REST APIs` |
+| **DevOps & Cloud** | `Docker` `Terraform` `AWS` `GCP` `Ansible` `GitHub Actions` `Linux` |
+
+<p align="center" style="margin-top: 15px;">
+  <img src="https://skillicons.dev/icons?i=python,bash,fastapi,postgres,docker,aws,gcp,terraform,ansible,prometheus,grafana,linux,git,github&perline=7" alt="Primary Stack" />
 </p>
-<p align="center">
-  <picture>
-    <img src="https://skillicons.dev/icons?i=prometheus,grafana,ansible,terraform,gcp,fastapi,postgres&perline=7" alt="Infrastructure Stack" />
-  </picture>
-</p>
+
+</div>
 
 ---
 
@@ -189,7 +222,7 @@ I'm exploring how **MCP** transforms the way AI agents interact with tools, code
 
 <p align="center">
   <!-- SYSTEM_STATUS_START -->
-  <sub><i>Last System Pulse: 2026-05-28 03:56 UTC • Total Portfolio Stars: ⭐ 0 • Automated via Profile Manager</i></sub>
+  <sub><i>Last System Pulse: 2026-05-28 09:30 UTC • Total Portfolio Stars: ⭐ 0 • Automated via Profile Manager</i></sub>
   <!-- SYSTEM_STATUS_END -->
 </p>
 
