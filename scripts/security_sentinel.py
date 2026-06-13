@@ -1,10 +1,30 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.10"
+# dependencies = [
+#     "rich",
+# ]
+# ///
 import os
 import re
 import ast
 import json
 import sys
 from datetime import datetime, timezone
+
+from rich.console import Console
+from rich.table import Table
+from rich.panel import Panel
+from rich.theme import Theme
+
+# Setup Console with custom styling theme
+custom_theme = Theme({
+    "info": "cyan",
+    "warning": "yellow",
+    "danger": "bold red",
+    "success": "bold green",
+})
+console = Console(theme=custom_theme)
 
 # Regex patterns for common secrets/keys
 SECRET_PATTERNS = {
@@ -14,6 +34,11 @@ SECRET_PATTERNS = {
     "AWS Access Key ID": r"\bAKIA[0-9A-Z]{16}\b",
     "Slack Webhook URL": r"https://hooks\.slack\.com/services/T[a-zA-Z0-9_]{8}/B[a-zA-Z0-9_]{8}/[a-zA-Z0-9_]{24}",
     "Private Key Block": r"-----BEGIN [A-Z ]*PRIVATE KEY-----",
+    "HuggingFace Token": r"\bhf_[a-zA-Z0-9]{34}\b",
+    "OpenAI API Key": r"\bsk-[a-zA-Z0-9]{48}\b",
+    "OpenAI Project Key": r"\bsk-proj-[a-zA-Z0-9-]{48,96}\b",
+    "Slack Token": r"\bxox[baprs]-[a-zA-Z0-9-]{10,48}\b",
+    "Discord Bot Token": r"\b[a-zA-Z0-9_\-]{24}\.[a-zA-Z0-9_\-]{6}\.[a-zA-Z0-9_\-]{27,38}\b",
     "Generic High-Entropy Key Assignment": r"(?i)(api[-_]?key|secret[-_]?key|private[-_]?key|token)\s*[:=]\s*['\"][a-zA-Z0-9_\-\.\/\+]{20,}['\"]"
 }
 
@@ -114,7 +139,7 @@ def audit_file(filepath):
                 })
 
     except Exception as e:
-        print(f"Error auditing file {filepath}: {e}", file=sys.stderr)
+        console.print(f"[danger]Error auditing file {filepath}: {e}[/danger]", file=sys.stderr)
         
     return results
 
@@ -130,7 +155,11 @@ def get_tracked_files():
     return files_to_scan
 
 def main():
-    print("🛡️ Security Sentinel starting repository audit...")
+    console.print(Panel(
+        "[bold cyan]🛡️ Security Sentinel[/bold cyan]\n[dim]Starting repository security & credential audit...[/dim]",
+        border_style="cyan"
+    ))
+    
     tracked_files = get_tracked_files()
     
     scan_report = {
@@ -165,21 +194,69 @@ def main():
     if has_threats:
         scan_report["status"] = "FAILING"
         
-    # Output report
-    print(f"\nAudit complete. Scanned {scan_report['files_scanned']} files.")
-    print(f"Status: {scan_report['status']}")
-    print(f"Secrets detected: {scan_report['secrets_found']}")
-    print(f"Code vulnerabilities: {scan_report['vulnerabilities_found']}")
-    
-    # Save the report as JSON in scratch
+    # Beautiful rich display of results
+    if scan_report["details"]:
+        table = Table(title="🔍 Detected Security Issues / Warnings", show_header=True, header_style="bold magenta")
+        table.add_column("File Path", style="cyan")
+        table.add_column("Type", style="yellow")
+        table.add_column("Line", justify="right", style="green")
+        table.add_column("Severity / Info", style="red")
+        table.add_column("Description", style="white")
+
+        for file_res in scan_report["details"]:
+            filepath = file_res["filepath"]
+            for secret in file_res.get("secrets", []):
+                table.add_row(
+                    filepath,
+                    secret["type"],
+                    str(secret["line"]),
+                    "[bold red]CRITICAL (Secret)[/bold red]",
+                    f"Credential leaked: {secret['value']}"
+                )
+            for vuln in file_res.get("vulnerabilities", []):
+                sev = vuln.get("severity", "LOW")
+                if sev == "HIGH":
+                    sev_str = f"[bold red]{sev}[/bold red]"
+                elif sev == "MEDIUM":
+                    sev_str = f"[bold yellow]{sev}[/bold yellow]"
+                else:
+                    sev_str = f"[dim cyan]{sev}[/dim cyan]"
+                table.add_row(
+                    filepath,
+                    vuln["type"],
+                    str(vuln["line"]),
+                    sev_str,
+                    vuln["description"]
+                )
+        console.print(table)
+    else:
+        console.print("\n[success]✨ No security threats or vulnerabilities detected in this repository.[/success]\n")
+        
+    # Output report JSON in scratch
     os.makedirs("scratch", exist_ok=True)
     with open("scratch/security_report.json", "w") as f:
         json.dump(scan_report, f, indent=2)
-    print("Saved security report to scratch/security_report.json")
+    console.print(f"[info]Saved security report to scratch/security_report.json[/info]")
+    
+    # Summary panel
+    status_color = "success" if scan_report["status"] == "PASSING" else "danger"
+    status_emoji = "✅" if scan_report["status"] == "PASSING" else "❌"
+    
+    summary_text = (
+        f"• Status: [{status_color}]{scan_report['status']}[/{status_color}] {status_emoji}\n"
+        f"• Files Scanned: {scan_report['files_scanned']}\n"
+        f"• Secrets Detected: [danger]{scan_report['secrets_found']}[/danger]\n"
+        f"• Code Vulnerabilities: [warning]{scan_report['vulnerabilities_found']}[/warning]"
+    )
+    
+    console.print(Panel(
+        summary_text,
+        title="[bold]Audit Summary[/bold]",
+        border_style="cyan" if scan_report["status"] == "PASSING" else "red"
+    ))
     
     if scan_report["status"] == "FAILING":
-        print("\n❌ Threat Detected! Please fix the reported items.", file=sys.stderr)
-        # We don't exit with non-zero unless forced, to let the profile build continue gracefully.
+        console.print("\n[danger]❌ Threat Detected! Please fix the reported items.[/danger]\n", file=sys.stderr)
         
 if __name__ == "__main__":
     main()

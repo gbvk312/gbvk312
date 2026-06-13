@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.10"
+# dependencies = [
+#     "rich",
+# ]
+# ///
 import json
 import subprocess
 import re
@@ -7,6 +13,19 @@ import urllib.request
 import os
 import random
 from datetime import datetime, timezone
+
+from rich.console import Console
+from rich.panel import Panel
+from rich.theme import Theme
+
+# Setup Console with custom styling theme
+custom_theme = Theme({
+    "info": "cyan",
+    "warning": "yellow",
+    "danger": "bold red",
+    "success": "bold green",
+})
+console = Console(theme=custom_theme)
 
 def run_command(cmd):
     """Runs a shell command and returns the output string, or raises an exception."""
@@ -23,7 +42,7 @@ def fetch_repos_api(owner, is_org=False):
     
     while True:
         url = f"https://api.github.com/orgs/{owner}/repos?per_page=100&page={page}" if is_org else f"https://api.github.com/users/{owner}/repos?per_page=100&page={page}"
-        print(f"Fetching via API page {page} for {owner}...")
+        console.print(f"[info]Fetching API page {page} for {owner}...[/info]")
         
         req = urllib.request.Request(url)
         req.add_header("User-Agent", "Profile-Updater-Script")
@@ -41,7 +60,7 @@ def fetch_repos_api(owner, is_org=False):
                     break
                 page += 1
         except Exception as e:
-            print(f"API fetch failed for {owner} page {page}: {e}")
+            console.print(f"[warning]API fetch failed for {owner} page {page}: {e}[/warning]")
             return None
             
     # Normalize to match GH CLI format
@@ -70,7 +89,7 @@ def fetch_repos(owner, fields, is_org=False):
         return original_repos
         
     # Fallback to gh CLI
-    print(f"Falling back to gh CLI for {owner}...")
+    console.print(f"[warning]Falling back to gh CLI for {owner}...[/warning]")
     cmd = ["gh", "repo", "list", owner, "--limit", "100", "--json", fields]
     output = run_command(cmd)
     repos = json.loads(output)
@@ -80,7 +99,7 @@ def fetch_repos(owner, fields, is_org=False):
 
 def fetch_current_focus_inner():
     """Queries open issues labeled 'focus' in gbvk312/gbvk312, returning the inner HTML block."""
-    print("Fetching current focus from issues...")
+    console.print("[info]Fetching current focus from issues...[/info]")
     token = os.environ.get("GITHUB_TOKEN")
     url = "https://api.github.com/repos/gbvk312/gbvk312/issues?labels=focus&state=open&per_page=1"
     req = urllib.request.Request(url)
@@ -96,10 +115,10 @@ def fetch_current_focus_inner():
                 issue = issues[0]
                 title = issue.get("title")
                 issue_url = issue.get("html_url")
-                print(f"Focus found: {title}")
+                console.print(f"[info]Focus found: {title}[/info]")
                 return f'<p align="center">\n  <sub>🎯 <b>Current Focus:</b> <a href="{issue_url}">{title}</a></sub>\n</p>'
     except Exception as e:
-        print(f"API fetch for focus issues failed: {e}. Falling back to gh CLI...")
+        console.print(f"[warning]API fetch for focus issues failed: {e}. Falling back to gh CLI...[/warning]")
         
     # Fallback to gh CLI
     try:
@@ -109,20 +128,20 @@ def fetch_current_focus_inner():
         if issues:
             title = issues[0].get("title")
             issue_url = issues[0].get("url")
-            print(f"Focus found via gh CLI: {title}")
+            console.print(f"[info]Focus found via gh CLI: {title}[/info]")
             return f'<p align="center">\n  <sub>🎯 <b>Current Focus:</b> <a href="{issue_url}">{title}</a></sub>\n</p>'
     except Exception as e:
-        print(f"gh CLI fetch for focus issues failed: {e}")
+        console.print(f"[warning]gh CLI fetch for focus issues failed: {e}[/warning]")
         
     # Default fallback
-    print("No active focus issue found. Using default focus.")
+    console.print("[info]No active focus issue found. Using default focus.[/info]")
     return '<p align="center">\n  <sub>🎯 <b>Current Focus:</b> Architecting autonomous security for the Agentic Web 🛡️</sub>\n</p>'
 
 def run_security_audit_inner():
     """Runs the security_sentinel.py script and returns the status inner HTML."""
-    print("Running DevSecOps security audit sentinel...")
+    console.print("[info]Running DevSecOps security audit sentinel...[/info]")
     try:
-        # Run the security sentinel
+        # Run the security sentinel using uv run if we are working with uv
         subprocess.run(["python3", "scripts/security_sentinel.py"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
         
         # Read the report
@@ -135,16 +154,21 @@ def run_security_audit_inner():
             vulns = report.get("vulnerabilities_found", 0)
             
             if status == "PASSING":
-                print("Sentinel Audit: PASSED securely.")
+                console.print("[success]Sentinel Audit: PASSED securely.[/success]")
                 return f'<sub><i>🛡️ DevSecOps Shield: Scanned & Secure • 0 Secrets • 0 Vulns • Verified by Security Sentinel</i></sub>'
             else:
-                print(f"Sentinel Audit: THREAT DETECTED! Secrets: {secrets}, Vulns: {vulns}.")
+                console.print(f"[danger]Sentinel Audit: THREAT DETECTED! Secrets: {secrets}, Vulns: {vulns}.[/danger]")
                 return f'<sub><i>⚠️ DevSecOps Shield: THREAT DETECTED • {secrets} Secrets • {vulns} Vulns • Verified by Security Sentinel</i></sub>'
     except Exception as e:
-        print(f"Security sentinel run failed: {e}")
+        console.print(f"[danger]Security sentinel run failed: {e}[/danger]")
         return '<sub><i>🛡️ DevSecOps Shield: Sentinel Audit Failed • Verified by Security Sentinel</i></sub>'
 
 def main():
+    console.print(Panel(
+        "[bold cyan]🔄 Profile Manager Pulse[/bold cyan]\n[dim]Updating dynamic README elements & metrics...[/dim]",
+        border_style="cyan"
+    ))
+    
     try:
         # 1. Fetch repositories
         user_repos = fetch_repos("gbvk312", "name,description,stargazerCount,pushedAt,repositoryTopics,isFork", is_org=False)
@@ -163,7 +187,9 @@ def main():
             sum(r.get("stargazerCount", 0) for r in utility_repos)
         )
         
-        print(f"Stats calculated: {user_repo_count} personal, {telecom_repo_count} telecom, {utility_repo_count} utility repos, {total_stars} total stars.")
+        console.print(
+            f"[info]Stats: {user_repo_count} personal, {telecom_repo_count} telecom, {utility_repo_count} utility repos | {total_stars} total stars.[/info]"
+        )
 
         # 2. Update JSON files in scratch/
         user_repos_cleaned = []
@@ -193,17 +219,18 @@ def main():
             })
 
         # Write files in compact single-line JSON formatting
+        os.makedirs("scratch", exist_ok=True)
         with open("scratch/repos.json", "w") as f:
             f.write(json.dumps(user_repos_cleaned, separators=(',', ':')) + "\n")
-        print("Updated scratch/repos.json")
+        console.print("[success]Updated scratch/repos.json[/success]")
 
         with open("scratch/telecom_repos.json", "w") as f:
             f.write(json.dumps(telecom_repos_cleaned, separators=(',', ':')) + "\n")
-        print("Updated scratch/telecom_repos.json")
+        console.print("[success]Updated scratch/telecom_repos.json[/success]")
 
         with open("scratch/utility_repos.json", "w") as f:
             f.write(json.dumps(utility_repos_cleaned, separators=(',', ':')) + "\n")
-        print("Updated scratch/utility_repos.json")
+        console.print("[success]Updated scratch/utility_repos.json[/success]")
 
         # 3. Update README.md
         with open("README.md", "r") as f:
@@ -213,42 +240,42 @@ def main():
         badge_pattern = r"(<!-- REPO_BADGE_START -->\s*).*?(\s*<!-- REPO_BADGE_END -->)"
         new_badge_html = f'<a href="https://github.com/gbvk312?tab=repositories"><img src="https://img.shields.io/badge/Repositories-{user_repo_count}-0D1117?style=for-the-badge&logo=github&logoColor=white" /></a>'
         readme_content = re.sub(badge_pattern, rf"\1{new_badge_html}\2", readme_content, flags=re.DOTALL)
-        print("Updated README repositories count badge.")
+        console.print("[success]Updated README repositories count badge.[/success]")
 
         # Update Telecom Badge
         telecom_badge_pattern = r"(<!-- TELECOM_BADGE_START -->\s*).*?(\s*<!-- TELECOM_BADGE_END -->)"
         new_telecom_badge_html = f'<a href="https://github.com/telecom-test-tools"><img src="https://img.shields.io/badge/Telecom_Tools-{telecom_repo_count}-0066FF?style=for-the-badge&logo=github&logoColor=white" /></a>'
         if re.search(telecom_badge_pattern, readme_content):
             readme_content = re.sub(telecom_badge_pattern, rf"\1{new_telecom_badge_html}\2", readme_content, flags=re.DOTALL)
-            print("Updated README Telecom Tools count badge.")
+            console.print("[success]Updated README Telecom Tools count badge.[/success]")
 
         # Update Utility Badge
         utility_badge_pattern = r"(<!-- UTILITY_BADGE_START -->\s*).*?(\s*<!-- UTILITY_BADGE_END -->)"
         new_utility_badge_html = f'<a href="https://github.com/gbvkUtilities"><img src="https://img.shields.io/badge/Utilities-{utility_repo_count}-00F7FF?style=for-the-badge&logo=github&logoColor=0D1117" /></a>'
         if re.search(utility_badge_pattern, readme_content):
             readme_content = re.sub(utility_badge_pattern, rf"\1{new_utility_badge_html}\2", readme_content, flags=re.DOTALL)
-            print("Updated README Utilities count badge.")
+            console.print("[success]Updated README Utilities count badge.[/success]")
 
         # Update System Status
         status_pattern = r"(<!-- SYSTEM_STATUS_START -->\s*).*?(\s*<!-- SYSTEM_STATUS_END -->)"
         current_time = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M")
         new_status_html = f'<sub><i>Last System Pulse: {current_time} UTC • Total Portfolio Stars: ⭐ {total_stars} • Automated via Profile Manager</i></sub>'
         readme_content = re.sub(status_pattern, rf"\1{new_status_html}\2", readme_content, flags=re.DOTALL)
-        print("Updated README System Pulse footer status.")
+        console.print("[success]Updated README System Pulse footer status.[/success]")
 
         # Update Current Focus Tracker
         focus_pattern = r"(<!-- FOCUS_SECTION_START -->\s*).*?(\s*<!-- FOCUS_SECTION_END -->)"
         new_focus_html = fetch_current_focus_inner()
         if re.search(focus_pattern, readme_content):
             readme_content = re.sub(focus_pattern, rf"\1{new_focus_html}\2", readme_content, flags=re.DOTALL)
-            print("Updated README Current Focus section.")
+            console.print("[success]Updated README Current Focus section.[/success]")
 
         # Update Security Sentinel
         security_pattern = r"(<!-- SECURITY_SENTINEL_START -->\s*).*?(\s*<!-- SECURITY_SENTINEL_END -->)"
         new_security_html = run_security_audit_inner()
         if re.search(security_pattern, readme_content):
             readme_content = re.sub(security_pattern, rf"\1{new_security_html}\2", readme_content, flags=re.DOTALL)
-            print("Updated README Security Sentinel section.")
+            console.print("[success]Updated README Security Sentinel section.[/success]")
 
         # Generate Rotating Spotlight
         utilities_with_desc = [r for r in utility_repos if r.get("description")]
@@ -267,14 +294,14 @@ def main():
             spotlight_pattern = r"(<!-- UTILITY_SPOTLIGHT_START -->\s*).*?(\s*<!-- UTILITY_SPOTLIGHT_END -->)"
             if re.search(spotlight_pattern, readme_content):
                 readme_content = re.sub(spotlight_pattern, rf"\1{spotlight_md}\2", readme_content, flags=re.DOTALL)
-                print("Updated README Rotating Utility Spotlight section.")
+                console.print("[success]Updated README Rotating Utility Spotlight section.[/success]")
 
         with open("README.md", "w") as f:
             f.write(readme_content)
-        print("Successfully updated README.md!")
+        console.print("[success]Successfully updated README.md![/success]")
 
     except Exception as e:
-        print(f"Error updating profile: {e}", file=sys.stderr)
+        console.print(f"[danger]Error updating profile: {e}[/danger]", file=sys.stderr)
         sys.exit(1)
 
 if __name__ == "__main__":
