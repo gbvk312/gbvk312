@@ -141,12 +141,12 @@ def run_security_audit_inner():
     """Runs the security_sentinel.py script and returns the status inner HTML."""
     console.print("[info]Running DevSecOps security audit sentinel...[/info]")
     try:
-        # Run the security sentinel using uv run if we are working with uv
-        subprocess.run(["python3", "scripts/security_sentinel.py"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        # Run the security sentinel using current Python interpreter
+        subprocess.run([sys.executable, "scripts/security_sentinel.py"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
         
         # Read the report
-        if os.path.exists("scratch/security_report.json"):
-            with open("scratch/security_report.json", "r") as f:
+        if os.path.exists("data/security_report.json"):
+            with open("data/security_report.json", "r") as f:
                 report = json.load(f)
                 
             status = report.get("status", "PASSING")
@@ -191,7 +191,7 @@ def main():
             f"[info]Stats: {user_repo_count} personal, {telecom_repo_count} telecom, {utility_repo_count} utility repos | {total_stars} total stars.[/info]"
         )
 
-        # 2. Update JSON files in scratch/
+        # 2. Update JSON files in data/
         user_repos_cleaned = []
         for r in user_repos:
             user_repos_cleaned.append({
@@ -219,18 +219,18 @@ def main():
             })
 
         # Write files in compact single-line JSON formatting
-        os.makedirs("scratch", exist_ok=True)
-        with open("scratch/repos.json", "w") as f:
+        os.makedirs("data", exist_ok=True)
+        with open("data/repos.json", "w") as f:
             f.write(json.dumps(user_repos_cleaned, separators=(',', ':')) + "\n")
-        console.print("[success]Updated scratch/repos.json[/success]")
+        console.print("[success]Updated data/repos.json[/success]")
 
-        with open("scratch/telecom_repos.json", "w") as f:
+        with open("data/telecom_repos.json", "w") as f:
             f.write(json.dumps(telecom_repos_cleaned, separators=(',', ':')) + "\n")
-        console.print("[success]Updated scratch/telecom_repos.json[/success]")
+        console.print("[success]Updated data/telecom_repos.json[/success]")
 
-        with open("scratch/utility_repos.json", "w") as f:
+        with open("data/utility_repos.json", "w") as f:
             f.write(json.dumps(utility_repos_cleaned, separators=(',', ':')) + "\n")
-        console.print("[success]Updated scratch/utility_repos.json[/success]")
+        console.print("[success]Updated data/utility_repos.json[/success]")
 
         # 3. Update README.md
         with open("README.md", "r") as f:

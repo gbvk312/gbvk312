@@ -43,7 +43,7 @@ SECRET_PATTERNS = {
 }
 
 # Directories to exclude from scanning
-EXCLUDE_DIRS = {".git", "scratch", "venv", ".venv", "node_modules", "dist", "build"}
+EXCLUDE_DIRS = {".git", "data", "scratch", "venv", ".venv", "node_modules", "dist", "build"}
 EXCLUDE_FILES = {"security_sentinel.py"}  # Skip itself
 
 class PythonSecurityAuditor(ast.NodeVisitor):
@@ -232,11 +232,11 @@ def main():
     else:
         console.print("\n[success]✨ No security threats or vulnerabilities detected in this repository.[/success]\n")
         
-    # Output report JSON in scratch
-    os.makedirs("scratch", exist_ok=True)
-    with open("scratch/security_report.json", "w") as f:
+    # Output report JSON in data
+    os.makedirs("data", exist_ok=True)
+    with open("data/security_report.json", "w") as f:
         json.dump(scan_report, f, indent=2)
-    console.print(f"[info]Saved security report to scratch/security_report.json[/info]")
+    console.print(f"[info]Saved security report to data/security_report.json[/info]")
     
     # Summary panel
     status_color = "success" if scan_report["status"] == "PASSING" else "danger"

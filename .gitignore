@@ -25,5 +25,5 @@ node_modules/
 dist/
 build/
 
-# Temporary Data
-# (Files in scratch/ and .last_sync are tracked/committed by profile-manager workflow)
+# Profile Metrics & Data
+# (Files in data/ and .last_sync are tracked/committed by profile-manager workflow)
