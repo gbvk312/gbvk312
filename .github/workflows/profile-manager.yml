@@ -2,8 +2,20 @@ name: Profile Manager
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Daily sync
+    - cron: '0 0 * * *' # Daily sync at 00:00 UTC
   workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - 'scripts/**'
+      - 'tests/**'
+      - '.github/workflows/profile-manager.yml'
+  issues:
+    types: [opened, edited, closed, reopened, labeled, unlabeled]
+
+concurrency:
+  group: profile-sync
+  cancel-in-progress: false
 
 jobs:
   refresh-profile:
@@ -25,17 +37,22 @@ jobs:
         with:
           enable-cache: true
 
+      - name: Run Test Suite & Verification
+        run: |
+          echo "Running unit tests and security audits..."
+          python3 -m unittest discover tests -v
+
       - name: Dynamic Stats Pulse
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "Syncing profile metrics..."
           uv run scripts/update_profile.py
-          date > .last_sync
+          date -u +"%Y-%m-%d %H:%M:%S UTC" > .last_sync
           
       - name: Commit and Push Changes
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md .last_sync data/*.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: profile heartbeat sync [skip ci]" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: profile heartbeat sync [skip ci]" && git pull --rebase origin main && git push)

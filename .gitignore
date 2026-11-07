@@ -14,16 +14,23 @@
 .vscode/
 .idea/
 
-# Local python environments
+# Local python environments & caches
 venv/
 .venv/
 __pycache__/
 *.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+.coverage
+htmlcov/
 
-# Artifacts
+# Artifacts & Temporary directories
 node_modules/
 dist/
 build/
+scratch/
 
 # Profile Metrics & Data
 # (Files in data/ and .last_sync are tracked/committed by profile-manager workflow)
